@@ -1,0 +1,338 @@
+//HEADER
+
+header {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  background: $white;
+  z-index: 1000;
+  padding: 60px 0px;
+
+  @media (min-width: 768px) {
+    background: none;
+    padding: 80px 0px 40px;
+  }
+
+  .row {
+    position: relative;
+  }
+
+  .logo {
+    img {
+      width: 128px;
+    }
+  }
+
+  .button-wrapper {
+    @media (max-width: 767px) {
+      position: absolute;
+      width: 100%;
+      top: 0px;
+      right: 0px;
+    }
+
+    .hamburger {
+      display: block;
+      float: right;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0px;
+      z-index: 100;
+      @include transition(all 0.2s ease-out);
+
+      div {
+        height: 22px;
+        width: 28px;
+        margin: 0px;
+        position: relative;
+        @include transition(all 0.1s ease-out);
+      }
+
+      span {
+        position: absolute;
+        background: $black;
+        height: 2px;
+        width: 28px;
+        right: 0;
+        @include transition(all 0.1s ease-out);
+
+        &:first-of-type {
+          top: 0;
+          @include transform(rotate(0deg));
+        }
+
+        &:nth-of-type(2) {
+          top: calc(50% - 1px);
+        }
+
+        &:last-of-type {
+          bottom: 0;
+          @include transform(rotate(0deg));
+        }
+      }
+
+      .navOpen & {
+        display: block;
+
+        span {
+          display: block;
+          background: $black;
+        }
+
+        span:first-of-type {
+          top: 50%;
+          @include transform(rotate(-45deg));
+        }
+
+        span:nth-of-type(2) {
+          display: none;
+        }
+
+        span:last-of-type {
+          top: 50%;
+          @include transform(rotate(45deg));
+        }
+      }
+    }
+  }
+
+  .nav-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+    overflow: hidden;
+    transition: 1s ease all;
+
+    .navOpen & {
+      transition: 1s ease all;
+      visibility: visible;
+    }
+
+    .nav-background {
+      width: 100%;
+      height: 100%;
+      background-color: $black20;
+      transition: 1s ease all;
+      opacity: 0;
+      visibility: hidden;
+
+      .navOpen & {
+        transition: 1s ease all;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    .nav-menu {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100vw;
+      height: 100vh;
+      background: white;
+      box-shadow: none;
+      overflow: scroll;
+
+      transform: translateX(100%);
+      transition: 1s ease transform;
+
+      @media (min-width: 768px) {
+        width: 85vw;
+      }
+
+      @media (min-width: 1440px) {
+        width: 57vw;
+      }
+
+      .navOpen & {
+        box-shadow: -30px 0px 150px 0px rgba(0, 0, 0, 0.2);
+        transform: translateX(0);
+        transition: 1s ease transform;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 60px;
+        padding: 50px 20px 0;
+
+        text-align: right;
+
+        @media (min-width: 375px) {
+          padding: 0 20px;
+        }
+
+        @media (min-width: 768px) {
+          padding-right: 80px;
+          padding-left: 40px;
+          margin-top: 80px;
+        }
+
+        @media (min-width: 1024px) {
+          padding-left: 110px;
+        }
+
+        @media all and (min-width: 1024px) and (-ms-high-contrast: none),
+          (-ms-high-contrast: active) {
+          width: 100%;
+        }
+
+        .button-wrapper {
+          margin-bottom: 60px;
+          padding-right: 16px;
+
+          @media (min-width: 768px) {
+            padding-right: 0;
+          }
+
+          .hamburger {
+            span {
+              display: block;
+              background: $black;
+
+              &:first-of-type {
+                display: block;
+                top: 50%;
+                @include transform(rotate(-45deg));
+              }
+
+              &:last-of-type {
+                display: block;
+                top: 50%;
+                @include transform(rotate(45deg));
+              }
+            }
+          }
+        }
+
+        small {
+          position: relative;
+          padding-right: 75px;
+
+          @media (min-width: 375px) {
+            margin-top: 60px;
+          }
+
+          @media (min-width: 768px) {
+            margin-top: 0px;
+          }
+
+          &:after {
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 50%;
+            width: 50px;
+            background: $brand1;
+            height: 2px;
+          }
+        }
+
+        nav {
+          @media all and (min-width: 1024px) and (-ms-high-contrast: none),
+            (-ms-high-contrast: active) {
+            overflow: hidden;
+          }
+
+          ul {
+            margin-top: 50px;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+
+            @media (min-width: 375px) {
+              margin-top: 75px;
+            }
+
+            li {
+              margin-bottom: 40px;
+
+              @media (min-width: 768px) {
+                margin-bottom: 50px;
+              }
+
+              a {
+                position: relative;
+                padding-bottom: 12px;
+
+                text-decoration: none;
+                color: $darkGrey;
+                line-height: 1;
+                text-transform: uppercase;
+
+                @media (min-width: 375px) {
+                  font-size: 20px;
+                  padding-bottom: 18px;
+                }
+                @media (min-width: 768px) {
+                  font-size: 32px;
+                }
+
+                @media (min-width: 1024px) {
+                  font-size: 42px;
+                }
+
+                &:after {
+                  content: "";
+                  position: absolute;
+                  left: 0;
+                  bottom: -2px;
+                  width: 100%;
+                  height: 2px;
+                  background-color: $brand1;
+                  transform: translateX(200%);
+                  transition: 0.8s ease all;
+                }
+              }
+
+              &.current-menu-item {
+                a {
+                  color: $black;
+                  border-bottom: solid 2px $brand1;
+
+                  &:after {
+                    display: none;
+                  }
+                }
+              }
+
+              &:hover {
+                a {
+                  &:after {
+                    transition: 0.8s ease all;
+                    transform: translateX(0);
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        a.logo {
+          position: absolute;
+          top: 0;
+          left: 0;
+          margin-top: 0;
+          margin-left: 20px;
+
+          @media (min-width: 768px) {
+            position: relative;
+            width: 90px;
+            margin: 30px 0 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+html.navOpen {
+  body {
+    overflow: hidden;
+  }
+}

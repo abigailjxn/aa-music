@@ -1,1 +1,2 @@
-amanda-august
+# Amanda August Music -- Portfolio Site
+

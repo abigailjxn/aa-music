@@ -1,0 +1,190 @@
+// TYPOGRAPHY
+
+////////// Import fonts locally here //////////
+// Save font files in assets/fonts
+
+// Declare Vars
+$serif: "Times New Roman", serif;
+
+$sansSerif: sans-serif;
+
+.text {
+  &-tiny {
+    font-size: 10px;
+    line-height: 1;
+  }
+  &-small {
+    font-size: 14px;
+    line-height: 1.25;
+  }
+  &-normal {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  &-medium {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  &-large {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  &-xLarge {
+    font-size: 45px;
+    line-height: 1.2;
+  }
+  &-xxLarge {
+    font-size: 55px;
+    line-height: 1;
+  }
+
+  @media (min-width: 768px) {
+    // &-normal { font-size: 18px; line-height: 2.1;  }
+    &-medium {
+      font-size: 24px;
+      line-height: 1.2;
+    }
+    &-large {
+      font-size: 24px;
+      line-height: 1.2;
+    }
+    &-xLarge {
+      font-size: 48px;
+      line-height: 1.16;
+    }
+    &-xxLarge {
+      font-size: 66px;
+      line-height: 1;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    // &-normal { font-size: 18px; line-height: 2.28;  }
+    &-medium {
+      font-size: 24px;
+      line-height: 1.4;
+    }
+    &-large {
+      font-size: 32px;
+      line-height: 1.2;
+    }
+    &-xLarge {
+      font-size: 62px;
+      line-height: 1.2;
+    }
+    &-xxLarge {
+      font-size: 86px;
+      line-height: 1;
+    }
+  }
+}
+
+body {
+  font-family: $sansSerif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-display: auto;
+  @extend .text-normal;
+  font-weight: normal;
+}
+
+.serif {
+  // Size
+  &-ti {
+    font-family: $serif;
+    @extend .text-tiny;
+  }
+  &-sm {
+    font-family: $serif;
+    @extend .text-small;
+  }
+  &-normal {
+    font-family: $serif;
+    @extend .text-normal;
+  }
+  &-med {
+    font-family: $serif;
+    @extend .text-medium;
+  }
+  &-lg {
+    font-family: $serif;
+    @extend .text-large;
+  }
+  &-xl {
+    font-family: $serif;
+    @extend .text-xLarge;
+  }
+  &-xxl {
+    font-family: $serif;
+    @extend .text-xxLarge;
+  }
+
+  // Weight
+  &.light {
+    font-weight: 100;
+  }
+  &.body {
+    font-weight: 400;
+  }
+  &.bold {
+    font-weight: 600;
+  }
+  &.black {
+    font-weight: 800;
+  }
+}
+
+.sansSerif {
+  // Size
+  &-ti {
+    font-family: $sansSerif;
+    @extend .text-tiny;
+  }
+  &-sm {
+    font-family: $sansSerif;
+    @extend .text-small;
+  }
+  &-normal {
+    font-family: $sansSerif;
+    @extend .text-normal;
+  }
+  &-med {
+    font-family: $sansSerif;
+    @extend .text-medium;
+  }
+  &-lg {
+    font-family: $sansSerif;
+    @extend .text-large;
+  }
+  &-xl {
+    font-family: $sansSerif;
+    @extend .text-xLarge;
+  }
+  &-xxl {
+    font-family: $sansSerif;
+    @extend .text-xxLarge;
+  }
+
+  // Weight
+  &.light {
+    font-weight: 100;
+  }
+  &.body {
+    font-weight: 400;
+  }
+  &.bold {
+    font-weight: 600;
+  }
+  &.black {
+    font-weight: 800;
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}

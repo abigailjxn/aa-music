@@ -1,0 +1,84 @@
+#footer, #dashboard_right_now .versions p, #dashboard_right_now .versions span, #wp-admin-bar-new-link, #wpfooter { display:none; }
+
+#dashboard_right_now .table_discussion, #dashboard_right_now .table_content tr.first { display:none; }
+
+body.login {
+	/*Update the hex below to be a brand color*/
+	background:#F16356;
+	background-size: cover;
+}
+
+/* LOGIN PAGE */
+#login h1 a {
+	/* Update the URL below to the theme's logo file */
+	/* background: url('../assets/img/amerifirst-footer-logo.png') no-repeat; */
+	background-position: 50%;
+	background-size: 100%;
+	display: block;
+	width: 250px;
+	height: 150px;
+	/*margin-left: 0;*/
+	text-indent: -9999px;
+	padding-bottom: 0;
+	margin-bottom: 25px;
+	opacity:1;
+
+	-webkit-transition: opacity 0.2s ease-out;
+       -moz-transition: opacity 0.2s ease-out;
+        -ms-transition: opacity 0.2s ease-out;
+         -o-transition: opacity 0.2s ease-out;
+            transition: opacity 0.2s ease-out;
+}
+
+#login h1 a:hover { opacity:1; }
+
+
+.login #nav a, .login #backtoblog a, #login_error a {
+	color:#fff !important;
+	-webkit-transition: color 0.2s ease-out;
+       -moz-transition: color 0.2s ease-out;
+        -ms-transition: color 0.2s ease-out;
+         -o-transition: color 0.2s ease-out;
+            transition: color 0.2s ease-out
+}
+
+/*Update the hex below to be a brand color*/
+.login #nav a:hover, .login #backtoblog a:hover { color:#fff !important; }
+
+.the-post-id span { color:#999; }
+
+/* Thumbnail column */
+#column-post_thumbs { width: 80px; }
+.column_post_thumb_holder { width:80px; height:40px; overflow: hidden; }
+.column_post_thumb_holder img { width: 80px; height: auto; }
+
+#column-logo, #column-industry, #column-transaction { width: 120px; }
+
+.my-acf-field {
+	color:#999;
+	font-weight:normal;
+	font-size:10px;
+	margin-top: 0 !important;
+}
+
+.my-acf-layout {
+	color:#999;
+	font-weight:normal;
+	font-size:12px;
+}
+
+.wp-core-ui .button-primary{
+	background:#F16356 !important;
+	border:none;
+	text-shadow: none;
+	box-shadow: none;
+	border-radius:0px;
+}
+
+.wp-core-ui .button-primary:hover{
+	background:#D0483C !important;
+}
+
+.login .privacy-policy-page-link{
+	display: none;
+}

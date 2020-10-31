@@ -1,0 +1,21 @@
+// VARIABLES
+
+// BREAKPOINTS
+// Uses http://breakpoint-sass.com
+$phone-xl: " min-width: 480px";
+$tablet: "min-width: 768px";
+$desktop-sm: "min-width: 1024px";
+$desktop-md: "min-width: 1200px";
+$desktop-lg: "min-width: 1440px";
+
+$use-pulse: true;
+$use-fadeIn: true;
+$use-fadeInUp: true;
+$use-fadeInDown: true;
+
+// Easing
+$easeOutQuint: cubic-bezier(0.23, 1, 0.32, 1);
+$easeOutSlow: cubic-bezier(0, 1, 1, 1);
+
+// A11y
+$reduced-motion: "prefers-reduced-motion";

@@ -1,0 +1,126 @@
+// TAGS
+
+// Customize Selection to brand colors
+::-moz-selection {
+  background: $black20;
+}
+::selection {
+  background: $black20;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  // These handle the 300ms delay event on mobile clicks
+  // http://stackoverflow.com/questions/12238587/eliminate-300ms-delay-on-click-events-in-mobile-safari
+
+  //	-ms-touch-action: manipulation;
+  //	touch-action: manipulation;
+
+  // Some sort of issue with this
+  // https://github.com/scottjehl/Device-Bugs/issues/8
+}
+
+main {
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+footer {
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+a {
+  color: $black;
+  text-decoration: underline;
+  @include ease();
+  @include hover() {
+    color: lighten($black, 5);
+  }
+
+  &.anchor {
+    position: absolute;
+    top: -50px;
+  }
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  border: none;
+  input,
+  textarea {
+    width: 100%;
+    border: none;
+    padding: 12px 15px;
+    font-size: 18px;
+  }
+}
+
+hr {
+  border-top-color: $brand1;
+  border-top-width: 1px;
+  border-top-style: solid;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+nav {
+  ul,
+  ol {
+    list-style: none;
+    padding: 0;
+    li {
+      float: left;
+    }
+  }
+}
+
+p {
+  &:empty {
+    display: none;
+  }
+}
+
+section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  float: left;
+  width: 100%;
+}

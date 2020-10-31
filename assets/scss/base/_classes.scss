@@ -1,0 +1,243 @@
+// CLASSES
+
+html {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  background-color: whtie;
+  min-height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.preload * {
+  //@include transition( none !important );
+}
+
+.wrapper {
+  width: 100%;
+  float: left;
+  display: block;
+  position: relative;
+}
+
+body {
+  background-color: #fff;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.loader {
+  transition: 0.5s ease all;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  //background: rgba(0,0,0,0.7); // url(../img/loader.gif) 50% 50% no-repeat;
+}
+
+.clear {
+  @include clearfix();
+}
+
+.show {
+  display: block;
+}
+.hide,
+.hidden {
+  display: none !important;
+}
+.caps {
+  text-transform: uppercase;
+}
+.center {
+  text-align: center;
+}
+.verticalAlign {
+  left: 0;
+  right: 0;
+  @include vertical-align();
+}
+
+.fade-out {
+  opacity: 0;
+}
+.fade-in {
+  opacity: 1;
+}
+
+.table {
+  display: table;
+  &-row {
+    display: table-row;
+  }
+  &-cell {
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  padding: 0 20px;
+  position: relative;
+
+  @media (min-width: 425px) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 100px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 1300px;
+    padding: 0px;
+  }
+
+  @media (min-width: 1600px) {
+    max-width: 1440px;
+    padding: 0px;
+  }
+
+  @media all and (min-width: 1700px) and (-ms-high-contrast: none),
+    (-ms-high-contrast: active) {
+    /* IE10+ CSS */
+    width: 1600px;
+  }
+
+  &.narrow {
+    max-width: 1000px;
+    margin: auto;
+    @media (min-width: 1200px) {
+      padding: 0 100px;
+    }
+  }
+
+  &.wide {
+    margin: auto;
+
+    @media (min-width: 425px) {
+      padding: 0 40px;
+    }
+
+    @media (min-width: 1024px) {
+      padding: 0 40px;
+    }
+
+    @media (min-width: 1200px) {
+      padding: 0 40px;
+    }
+
+    @media (min-width: 1440px) {
+      max-width: 1400px;
+      padding: 0px;
+    }
+
+    @media (min-width: 1600px) {
+      max-width: 1550px;
+      padding: 0px;
+    }
+  }
+  .addMargin {
+    margin: 0 20px;
+  }
+  &.noPad {
+    padding: 0;
+  }
+  &.fullWidth {
+    max-width: 100%;
+  }
+}
+
+.narrow {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.cols {
+  @extend .clear;
+}
+
+.fluid {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.position-center {
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  margin: auto;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hide-mobile {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hide-desktop {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.add-animate {
+  transform: translateY(20px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.animate {
+  transition: 1.2s ease all;
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.scrolled {
+  position: fixed !important;
+  top: 0;
+}

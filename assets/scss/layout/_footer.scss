@@ -1,0 +1,96 @@
+//FOOTER
+
+footer {
+  color: white;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .menu {
+    ul {
+      li {
+        a {
+          line-height: 41px;
+
+          @media (min-width: 768px) {
+            line-height: initial;
+          }
+        }
+
+        &.current-menu-item {
+          a {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-footer {
+  display: flex;
+  background-color: $brand1;
+
+  @media (min-width: 768px) {
+    height: 355px;
+  }
+
+  .container {
+    height: 100%;
+    padding: 50px 40px;
+
+    @media (min-width: 768px) {
+      padding: 0 20px;
+    }
+  }
+
+  .row {
+    justify-content: flex-start;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      margin: 75px 0;
+      justify-content: center;
+      flex-direction: row;
+    }
+
+    .logo {
+      position: relative;
+      width: 150px;
+      padding-bottom: 95px;
+
+      @media (min-width: 768px) {
+        width: 195px;
+        padding-bottom: 0;
+      }
+
+      @media (min-width: 1024px) {
+        margin-right: 65px;
+      }
+
+      &:after {
+        content: " ";
+        border-bottom: solid white 2px;
+        width: 50px;
+        position: absolute;
+
+        top: 50px;
+      }
+    }
+
+    .menu {
+      @media (min-width: 768px) {
+        width: 185px;
+        margin: 0 60px;
+      }
+
+      a {
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
