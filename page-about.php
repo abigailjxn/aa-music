@@ -93,7 +93,28 @@ get_header();
 </section>
           
 <section class="inspiration">
-    
+    <div class="container">
+        <div class="row">
+            <div class="flex-4">
+                <h2 class="sansHeader-lg normal">
+                    Sounds of<br>Inspiration
+                </h2>
+                <p class="sansSerif-sm normal">Amanda’s writing style is an amalgamation of her love for anime, fantasy films, and video games. Drawing from composers such as Howard Shore (Lord of the Rings), Joe Hisaishi (Spirited Away), and Thomas Newman (Shawshank Redemption), her music embodies piano driven melodies, ethereal themes, and classical elements. As an artist, creating content that will move and inspire has always been her top priority.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-cta">
+    <div class="container">
+        <div class="row">
+            <h2 class="sansHeader-lg normal">
+                Let's Make Some Music
+            </h2>
+            <a href="" class="button">Get in touch</a>
+        </div>
+    </div>
 </section>
 
 <?php endwhile; endif; ?>
