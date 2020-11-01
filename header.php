@@ -1,6 +1,6 @@
 <?php
 
-// $navMain = wp_get_nav_menu_items("Main");
+$navMain = wp_get_nav_menu_items("Header");
 
 ?>
 <!DOCTYPE html>
@@ -61,11 +61,11 @@
 						</div>
 						<nav>
 							<ul>
-								<!-- <?php foreach ($navMain as $m) { ?>
+								<?php foreach ($navMain as $m) { ?>
 									<li class="<?php echo implode(' ', $m->classes); ?>">
 										<a href="<?php echo $m->url; ?>" target="<?php echo $m->target; ?>" ><?php echo $m->title; ?></a>
 									</li>
-								<?php } ?> -->
+								<?php } ?>
 							</ul>
 						</nav>
 					</div>

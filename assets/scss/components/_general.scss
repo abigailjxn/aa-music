@@ -5,94 +5,12 @@
 }
 
 .button {
-  position: absolute;
-  height: 55px;
-  width: 55px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-
-  background: white;
-  border-radius: 50%;
-  box-shadow: 15px 20px 45px $black20;
-  transition: 0.3s ease all;
-
-  @media (min-width: 768px) {
-    height: 88px;
-    width: 88px;
-  }
-
-  &:hover {
-    transform: translate(-50%, -50%) scale(1.1);
-    transition: 0.3s ease all;
-  }
-
-  a {
-    color: $brand1;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-32%, -50%);
-    text-decoration: none;
-
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 16px solid $brand1;
-
-    @media (min-width: 768px) {
-      border-top: 16px solid transparent;
-      border-bottom: 16px solid transparent;
-      border-left: 26px solid $brand1;
-    }
-  }
+  color: $black;
+  padding: 4px 22px;
+  text-decoration: none;
+  font-weight: 100;
+  
+  border: 1px solid black;
+  border-radius: 20px;
 }
 
-.to-top-btn {
-  position: fixed;
-  z-index: 10000;
-  top: calc(100vh - 100px);
-  left: calc(100vw - 60px);
-  opacity: 0;
-  transition: 0.8s ease all;
-
-  width: 60px;
-  height: 60px;
-
-  @media (min-width: 375px) {
-    top: calc(100vh - 150px);
-  }
-
-  @media (min-width: 768px) {
-    top: calc(100vh - 165px);
-    left: calc(100vw - 148px);
-    width: 88px;
-    height: 88px;
-  }
-
-  &.reveal {
-    transition: 0.8s ease all;
-    opacity: 1;
-  }
-
-  a {
-    font-size: 18px;
-    border: none;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-
-    @media (min-width: 768px) {
-      font-size: 24px;
-    }
-
-    i {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-}
