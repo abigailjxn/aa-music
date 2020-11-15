@@ -90,6 +90,7 @@ get_header();
             </ul>
         </div>
     </div>
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/branch-3.png" alt=" ">
 </section>
           
 <section class="inspiration">
@@ -104,9 +105,10 @@ get_header();
             </div>
         </div>
     </div>
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/branch-4.png" alt=" ">
 </section>
 
-<section class="about-cta">
+<section class="about-cta" style="background-image: url('<?php ?>');">
     <div class="container">
         <div class="row">
             <h2 class="sansHeader-lg normal">
