@@ -32,7 +32,7 @@ $navMain = wp_get_nav_menu_items("Header");
 		<header class="top" id="header">
 			<div class="container">
 				<div class="row">
-					<div class="logo">
+					<div class="flex-2 logo">
 						<a href="<?php bloginfo('url'); ?>">Logo</a>
 					</div>
 					<div class="flex-10 button-wrapper text-right">

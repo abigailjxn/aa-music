@@ -9,12 +9,20 @@
 <section class="hero">
     <div class="container">
         <div class="row">
-            <div class="flex-7">
+            <div class="flex-6">
                 <h1 class="sansHeader-xl uppercase normal"><?php the_title();?></h1>
-                <p><?php the_content();?></p>
+                <p><?php //the_field('subtitle');?></p>
+            </div>
+            <div class="flex-6">
+                <div class="morph-container">
+                    <img src="" alt="">
+                </div>
             </div>
         </div>
     </div>
+    <div class="shape1"></div>
+    <div class="shape2"></div>
+    <img src="" alt="">
 </section>
 
 <section class="featured-work">

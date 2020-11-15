@@ -26,7 +26,7 @@ get_header();
 <section class="music-cta">
     <div class="container">
         <div class="row">
-            <div class="flex-4">
+            <div class="flex-4 center">
                 <h2 class="sansHeader-lg normal">Like what you hear?</h2>
                 <h3 class="sansHeader-normal normal">Contact Amanda</h3>
             </div>
