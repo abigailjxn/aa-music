@@ -48,7 +48,7 @@ $logo = get_field('logo');
 						</button>
 					</div>
 
-					<nav class="flex-6 text-right">
+					<nav class="flex-7 text-right hide-mobile">
 						<ul>
 							<?php foreach ($navMain as $m) { ?>
 								<li class="<?php echo implode(' ', $m->classes); ?>">

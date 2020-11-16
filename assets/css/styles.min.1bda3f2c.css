@@ -335,11 +335,19 @@ header { position: absolute; width: 100%; top: 0px; background: #ffffff; z-index
 
 header .row { position: relative; }
 
-@media (min-width: 1440px) { header .row { display: flex; align-items: center; justify-content: space-between; } }
+@media (min-width: 1024px) { header .row { display: flex; align-items: center; justify-content: space-between; } }
 
 header .logo img { width: 80px; }
 
-@media (min-width: 1440px) { header nav ul { display: flex; justify-content: space-evenly; } }
+@media (min-width: 1024px) { header nav ul { display: flex; justify-content: space-evenly; }
+  header nav ul li { display: flex; align-items: center; position: relative; }
+  header nav ul li.current-menu-item { border-bottom: 1px solid black; padding: 0 5px; }
+  header nav ul li.current-menu-item:hover:after { display: none; }
+  header nav ul li:hover:after { height: 1px; width: 100%; background: black; }
+  header nav ul li:after { position: absolute; bottom: -2px; left: 50%; transform: translateX(-50%); width: 0%; transition: 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55) all; content: ""; }
+  header nav ul li a { text-decoration: none; text-transform: uppercase; }
+  header nav ul li:last-of-type { border: 1px solid black; border-radius: 25px; padding: 10px 25px; margin-left: 70px; }
+  header nav ul li:last-of-type:after { display: none; } }
 
 @media (max-width: 767px) { header .button-wrapper { position: absolute; width: 100%; top: 0px; right: 0px; } }
 
@@ -461,7 +469,11 @@ footer .socials ul li { width: 28px; }
 
 body { background-color: #FBF5E8; }
 
+@media (min-width: 1024px) { .branch-1 { width: 430px; } }
+
 @media (min-width: 1440px) { .branch-1 { width: 530px; } }
+
+@media (min-width: 1024px) { .branch-2 { width: 150px; } }
 
 @media (min-width: 1440px) { .branch-2 { width: 200px; } }
 

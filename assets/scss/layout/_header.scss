@@ -16,7 +16,7 @@ header {
   .row {
     position: relative;
 
-    @media(min-width: $desktop-lg){
+    @media(min-width: $desktop-sm){
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -30,10 +30,57 @@ header {
   }
 
   nav{
-    ul{
-      @media(min-width: $desktop-lg){
-        display: flex;
-        justify-content: space-evenly;
+    @media(min-width: $desktop-sm){
+      ul{
+          display: flex;
+          justify-content: space-evenly;
+  
+        li{
+          display: flex;
+          align-items: center;
+          position: relative;
+  
+          &.current-menu-item{
+            border-bottom: 1px solid black;
+            padding: 0 5px;
+  
+            &:hover:after{
+              display: none;
+            }
+          }
+  
+          &:hover:after{
+            height: 1px;
+            width: 100%;
+            background: black;
+          }
+          
+          &:after{
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0%;
+            transition: .3s cubic-bezier(.68,-.55,.27,1.55) all;
+            content: "";
+          }
+  
+          a{
+            text-decoration: none;
+            text-transform: uppercase;
+          }
+        }
+  
+        li:last-of-type{
+          border: 1px solid black;
+          border-radius: 25px;
+          padding: 10px 25px;
+          margin-left: 70px;
+  
+          &:after{
+            display: none;
+          }
+        }
       }
     }
   }
