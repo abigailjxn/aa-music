@@ -1,5 +1,17 @@
 //Home Page
 
-body{
-    background-color: $page-bg;
+body {
+  background-color: $page-bg;
+}
+
+.branch-1 {
+  @media (min-width: $desktop-lg) {
+    width: 530px;
+  }
+}
+
+.branch-2 {
+  @media (min-width: $desktop-lg) {
+    width: 200px;
+  }
 }

@@ -25,7 +25,7 @@
     </div>
     <div class="shape1"></div>
     <div class="shape2"></div>
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/branch-1.png" alt=" ">
+    <img class="branch-1" src="<?php echo get_template_directory_uri(); ?>/assets/img/branch-1.png" alt=" ">
 </section>
 
 <section class="featured-work">
@@ -68,7 +68,7 @@
     </div>
 </section>
 
-<section class="front-cta">
+<section class="cta">
     <div class="container">
         <div class="row">
             <div class="flex-4 push-1">
@@ -87,8 +87,7 @@
             </div>
         </div>
     </div>
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/branch-2.png" alt=" ">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/decor-1.png" alt=" ">
+    <img class="branch-2" src="<?php echo get_template_directory_uri(); ?>/assets/img/branch-2.png" alt=" ">
 </section>
 
 <?php endwhile; endif; ?>

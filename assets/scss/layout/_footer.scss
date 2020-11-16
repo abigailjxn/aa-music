@@ -4,42 +4,48 @@ footer {
   height: 100%;
   color: $black;
   background-color: $grey;
-  
-  @media(min-width: $tablet){
+
+  @media (min-width: $tablet) {
     height: 100px;
   }
 
- .container{
-   height: 100%;
- }
+  .container {
+    height: 100%;
+  }
 
- .row{
-   height: 100%;
-   align-items: center;
-   justify-content: space-between;
- }
+  .row {
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   a {
     color: black;
     text-decoration: none;
   }
 
-  .menu {
+  .footer-decor{
+    width: 150px;
+    position: absolute;
+    top: -90px;
+    left: 25%;
+
+  }
+
+  .socials {
+    @media (min-width: $desktop-lg) {
+      width: 15%;
+    }
+
     ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: auto;
+      padding: 0;
+
       li {
-        a {
-          line-height: 41px;
-
-          @media (min-width: 768px) {
-            line-height: initial;
-          }
-        }
-
-        &.current-menu-item {
-          a {
-            font-weight: bold;
-          }
-        }
+        width: 28px;
       }
     }
   }

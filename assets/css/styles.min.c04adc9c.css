@@ -331,11 +331,15 @@ section { background-size: cover; background-repeat: no-repeat; background-posit
 
 header { position: absolute; width: 100%; top: 0px; background: #ffffff; z-index: 1000; padding: 60px 0px; }
 
-@media (min-width: 768px) { header { background: none; padding: 80px 0px 40px; } }
+@media (min-width: 768px) { header { background: none; padding: 70px 0px 40px; } }
 
 header .row { position: relative; }
 
-header .logo img { width: 128px; }
+@media (min-width: 1440px) { header .row { display: flex; align-items: center; justify-content: space-between; } }
+
+header .logo img { width: 80px; }
+
+@media (min-width: 1440px) { header nav ul { display: flex; justify-content: space-evenly; } }
 
 @media (max-width: 767px) { header .button-wrapper { position: absolute; width: 100%; top: 0px; right: 0px; } }
 
@@ -447,13 +451,19 @@ footer .row { height: 100%; align-items: center; justify-content: space-between;
 
 footer a { color: black; text-decoration: none; }
 
-footer .menu ul li a { line-height: 41px; }
+footer .footer-decor { width: 150px; position: absolute; top: -90px; left: 25%; }
 
-@media (min-width: 768px) { footer .menu ul li a { line-height: initial; } }
+@media (min-width: 1440px) { footer .socials { width: 15%; } }
 
-footer .menu ul li.current-menu-item a { font-weight: bold; }
+footer .socials ul { display: flex; align-items: center; justify-content: space-between; width: auto; padding: 0; }
+
+footer .socials ul li { width: 28px; }
 
 body { background-color: #FBF5E8; }
+
+@media (min-width: 1440px) { .branch-1 { width: 530px; } }
+
+@media (min-width: 1440px) { .branch-2 { width: 200px; } }
 
 section { padding-top: 180px; }
 

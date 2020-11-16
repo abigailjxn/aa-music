@@ -1,6 +1,7 @@
 <?php
 
 $navMain = wp_get_nav_menu_items("Header");
+$logo = get_field('logo');
 
 ?>
 <!DOCTYPE html>
@@ -33,9 +34,11 @@ $navMain = wp_get_nav_menu_items("Header");
 			<div class="container">
 				<div class="row">
 					<div class="flex-2 logo">
-						<a href="<?php bloginfo('url'); ?>">Logo</a>
+						<a href="<?php bloginfo('url'); ?>">
+							<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>">
+						</a>
 					</div>
-					<div class="flex-10 button-wrapper text-right">
+					<div class="flex-10 button-wrapper text-right hide-desktop">
 						<button class="hamburger" id="hamburger" aria-label="Menu Button" tabindex="0">
 							<div>
 								<span></span>
@@ -44,10 +47,20 @@ $navMain = wp_get_nav_menu_items("Header");
 							</div>
 						</button>
 					</div>
+
+					<nav class="flex-6 text-right">
+						<ul>
+							<?php foreach ($navMain as $m) { ?>
+								<li class="<?php echo implode(' ', $m->classes); ?>">
+									<a href="<?php echo $m->url; ?>" target="<?php echo $m->target; ?>" ><?php echo $m->title; ?></a>
+								</li>
+							<?php } ?>
+						</ul>
+					</nav>
 				</div>
 			</div>
 
-			<div class="nav-wrapper">
+			<div class="nav-wrapper hide-desktop">
 				<div class="nav-background"></div>
 				<div class="nav-menu">
 					<div class="container">
