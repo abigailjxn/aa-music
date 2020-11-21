@@ -4,6 +4,74 @@ section {
   padding-top: 180px;
 }
 
+// About
+section.training {
+  background: $brand1;
+}
+
+section.collab {
+  background: $white;
+}
+
+section.about-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    background-size: cover;
+    width: 100%;
+    // padding-top: 59.43%;
+
+    &:before{
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: 72.5%;
+    }
+  }
+
+  .container{
+    @media(min-width: $tablet){
+      left: -50%;
+      transform: translateX(50%);
+      width: 600%;
+      margin-top: 20%;
+
+    }
+  }
+
+  .row {
+    justify-content: center;
+  }
+
+  .text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 100;
+    color: white;
+    text-align: center;
+
+    a {
+      color: white;
+      border-color: white;
+    }
+  }
+
+  .flower-shape {
+    background: $brand2;
+    width: 880px;
+    clip-path: url("#cta-shape");
+  }
+
+  .cta-shape {
+    width: 0;
+  }
+}
+
 // 404 Page
 section.page-not-found {
   min-height: 800px;

@@ -17,6 +17,7 @@ get_header();
             </div>
         </div>
     </div>
+    <img class="style-svg about-hero" src="<?php echo get_template_directory_uri(); ?>/assets/img/about-1.svg" alt=" ">
 </section>
 
 <section class="training">
@@ -108,13 +109,17 @@ get_header();
     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/branch-4.png" alt=" ">
 </section>
 
-<section class="about-cta" style="background-image: url('<?php ?>');">
+<section class="about-cta" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/mural.jpg');" aria-label="">
     <div class="container">
         <div class="row">
-            <h2 class="sansHeader-lg normal">
-                Let's Make Some Music
-            </h2>
-            <a href="" class="button">Get in touch</a>
+            <div class="text">
+                <h2 class="sansHeader-lg normal">
+                    Let's Make Some Music
+                </h2>
+                <a href="" class="button">Get in touch</a>
+            </div>
+            <img class="flower-shape" src="<?php echo get_template_directory_uri(); ?>/assets/img/branch-3-crop.png" alt=" ">
+            <img class="style-svg cta-shape" src="<?php echo get_template_directory_uri(); ?>/assets/img/cta-shape.svg" alt=" ">
         </div>
     </div>
 </section>
