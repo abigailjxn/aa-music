@@ -20,6 +20,9 @@ get_header();
 </section>
 
 <section class="music-grid">
+    <div class="commercial">
+        <?php echo do_shortcode("[origincode_videogallery id='1']"); ?>
+    </div>
 
 </section>
 

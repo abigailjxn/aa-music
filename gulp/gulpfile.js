@@ -1,6 +1,6 @@
 const { watch, series, parallel, src, dest } = require("gulp");
 
-const sass = require("gulp-sass");
+const sass = require("@selfisekai/gulp-sass");
 const cssmin = require("gulp-cssmin");
 const rename = require("gulp-rename");
 const deletefiles = require("gulp-remove-files");

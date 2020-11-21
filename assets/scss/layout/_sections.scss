@@ -4,6 +4,100 @@ section {
   padding-top: 180px;
 }
 
+// Music
+
+section#thumbwrapper1 {
+  padding-top: 0;
+
+  ul#origincode_videogallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    box-shadow: none;
+    margin: auto;
+    padding: 0 9px;
+
+    @media (min-width: $desktop-lg) {
+      max-width: 1300px;
+      min-height: 100%;
+    }
+
+    li.origincode_big_li {
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      height: auto;
+      padding: 0 !important;
+      border: 1px solid #444444;
+      border-radius: 5px;
+      flex: 0 1 30.9%;
+      box-sizing: border-box;
+      margin: 15px !important;
+
+      &:hover{
+        .overLayer{
+          background: $black80;
+        }
+      }
+
+      a {
+        position: absolute;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 6;
+        border-radius: 5px;
+        height: 100%;
+      }
+
+      img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: 100%;
+        margin: 0 !important;
+      }
+
+      .overLayer,
+      .infoLayer {
+        max-width: 100% !important;
+        height: 100% !important;
+      }
+
+      .infoLayer{
+        ul{
+          margin-top: 0;
+          position: absolute;
+          width: 100%;
+          text-align: left;
+          bottom: 20px;
+
+          li:first-child{
+            border-bottom-width: 1px;
+          }
+
+          h2{
+            font-family: $sansHeader;
+            font-weight: normal;
+            font-size: 26px;
+          }
+
+          p{
+            font-family: $sansSerif;
+            text-transform: uppercase;
+            font-weight: 100;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
 // About
 section.training {
   background: $brand1;
@@ -24,7 +118,7 @@ section.about-cta {
     width: 100%;
     // padding-top: 59.43%;
 
-    &:before{
+    &:before {
       display: block;
       content: "";
       width: 100%;
@@ -32,13 +126,12 @@ section.about-cta {
     }
   }
 
-  .container{
-    @media(min-width: $tablet){
+  .container {
+    @media (min-width: $tablet) {
       left: -50%;
       transform: translateX(50%);
       width: 600%;
       margin-top: 20%;
-
     }
   }
 
