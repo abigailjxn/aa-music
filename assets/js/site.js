@@ -1,6 +1,14 @@
 $(document).ready(function () {
   // Header Menu
-  $(".hamburger").on("click", function (e) {
+  const hamburgerElem = $(".hamburger");
+
+  hamburgerElem.keyup((e) => {
+    if (e.keyCode === 13 || e.keyCode === 32) {
+      hamburgerElem.click();
+    }
+  });
+
+  hamburgerElem.click((e) => {
     e.preventDefault(); // stops link from making page jump to the top
     e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
     $("html").toggleClass("navOpen");

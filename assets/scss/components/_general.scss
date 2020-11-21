@@ -5,12 +5,41 @@
 }
 
 .button {
+  position: relative;
   color: $black;
-  padding: 4px 22px;
+  padding: 10px 25px;
   text-decoration: none;
+  text-transform: uppercase;
   font-weight: 100;
   
   border: 1px solid black;
-  border-radius: 20px;
+  border-radius: 25px;
+  z-index: 10;
+
+  &:hover{
+    color: white!important;
+    border-color: transparent;
+    &:before{
+      width: 100%;
+      transition: ease all .3s;
+    }
+  }
 }
 
+.button:before{
+  content: " ";
+  position: absolute;
+  background: black;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 0%;
+  border-radius: 30px;
+  transition: ease all .3s;
+  z-index: -1;
+}
+
+.typeform-share.link{
+  text-decoration: none!important;
+}

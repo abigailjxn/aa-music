@@ -4,6 +4,69 @@ body {
   background-color: $page-bg;
 }
 
+section.hero {
+  @media (min-width: $desktop-lg) {
+    padding-top: 320px;
+  }
+
+  .row {
+    align-items: center;
+  }
+}
+
+section.featured-work{
+  @media(min-width: $desktop-lg){
+    padding-bottom: 180px;
+  }
+}
+
+section.cta {
+  @media (min-width: $desktop-lg) {
+    height: 400px;
+    margin-bottom: 180px;
+  }
+
+  .row{
+    align-items: center;
+  }
+
+  .contact-form{
+    text-align: center;
+  }
+
+  .music-cta {
+    flex-direction: column;
+  }
+
+  .divider {
+    height: 400px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+// Decorative elements
+
+.abstract-1 {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.abstract-2 {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+
+  @media (min-width: $desktop-lg) {
+    width: 950px;
+    height: auto;
+    top: 500px;
+  }
+}
+
 .branch-1 {
   @media (min-width: $desktop-sm) {
     width: 430px;
@@ -18,6 +81,22 @@ body {
     width: 150px;
   }
   @media (min-width: $desktop-lg) {
+    position: absolute;
+    top: -50%;
     width: 200px;
   }
+}
+
+.decor-2 {
+  width: 100px;
+  position: absolute;
+  right: 0;
+  top: -70px;
+}
+
+.abstract-3 {
+  position: absolute;
+  right: 0px;
+  top: -50px;
+  z-index: -1;
 }

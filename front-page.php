@@ -18,13 +18,13 @@
             </div>
             <div class="flex-6">
                 <div class="morph-container">
-                    <img src="<?php echo $profile['url'];?>" alt="<?php echo $profile['alt'];?>">
+                    <img class="style-svg" src="<?php echo $profile['url'];?>" alt="<?php echo $profile['alt'];?>">
                 </div>
             </div>
         </div>
     </div>
-    <div class="shape1"></div>
-    <div class="shape2"></div>
+    <img class="style-svg abstract-1" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-1.svg" alt=" ">
+    <img class="style-svg abstract-2" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-2.svg" alt=" ">
     <img class="branch-1" src="<?php echo get_template_directory_uri(); ?>/assets/img/branch-1.png" alt=" ">
 </section>
 
@@ -74,16 +74,18 @@
             <div class="flex-4 push-1">
                 <div class="contact-form">
                     <h2 class="sansHeader-lg normal"><?php echo $contact['form_header']?></h2>
+                    <p>To get started, fill out this quick form</p>
                     <?php the_field('typeform_embed_code'); ?>
                 </div>
             </div>
             <div class="divider"></div>
-            <div class="flex-4 push-1">
-                <div class="music-cta">
+            <div class="flex-5 push-2">
+                <div class="music-cta flex-center">
                     <h2 class="sansHeader-lg normal"><?php echo $contact['link_header']?></h2>
                     <a href="<?php echo $contact['link']['url']?>" class="button uppercase"><?php echo $contact['link']['title']?></a>
                 </div>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/decor-2.png" alt=" ">
+                <img class="decor-2" src="<?php echo get_template_directory_uri(); ?>/assets/img/decor-2.png" alt=" ">
+                <img class="abstract-3 style-svg" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-3.svg" alt=" ">
             </div>
         </div>
     </div>

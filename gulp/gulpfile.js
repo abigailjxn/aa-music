@@ -10,7 +10,7 @@ const concat = require("gulp-concat");
 const rev = require("gulp-rev-all");
 
 const settings = {
-  domain: "http://wordpressbase.local/",
+  domain: "http://amandaaugustmusic.local/",
   root: "../assets/",
   sassInput: "../assets/**/*.scss",
   sassOutput: "../assets/css/",
