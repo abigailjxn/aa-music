@@ -6,6 +6,65 @@ section {
 
 // Music
 
+section.music-grid {
+  .accordion {
+    &__button {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      text-align: left;
+      font-family: "tenor sans";
+      font-size: 36px;
+      border: none;
+      border-bottom: 1px solid black;
+      background: none;
+      padding: 30px;
+      transition: ease all 0.4s;
+
+      &:focus, &:hover{
+        background: darken( $page-bg, 10% );
+        transition: ease all 0.4s;
+      }
+
+      &:after{
+        content: "";
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border: solid $medGrey;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 0px;
+        margin-top: 5px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transition: ease all 0.4s;
+      }
+      
+      &:focus:after, &:hover:after{
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transition: ease all 0.4;
+      }
+    }
+
+    &__section {
+      max-height: 0;
+      overflow: hidden;
+      visibility: hidden;
+      transition:0.7s height, 0.7s padding, 0.7s margin, 0s visibility 0.7s;
+    }
+    &__section.open{
+      margin-top: 120px;
+      max-height: 100%;
+      overflow:auto;
+      visibility: visible;
+      transition:0.4s height, 0.4s padding, 0.4s margin;
+    }
+  }
+}
+
 section#thumbwrapper1 {
   padding-top: 0;
 
@@ -24,6 +83,11 @@ section#thumbwrapper1 {
       min-height: 100%;
     }
 
+    @media (min-width: 1600px) {
+      max-width: 1440px;
+      min-height: 100%;
+    }
+
     li.origincode_big_li {
       width: 100%;
       max-width: 100%;
@@ -36,8 +100,8 @@ section#thumbwrapper1 {
       box-sizing: border-box;
       margin: 15px !important;
 
-      &:hover{
-        .overLayer{
+      &:hover {
+        .overLayer {
           background: $black80;
         }
       }
@@ -68,25 +132,25 @@ section#thumbwrapper1 {
         height: 100% !important;
       }
 
-      .infoLayer{
-        ul{
+      .infoLayer {
+        ul {
           margin-top: 0;
           position: absolute;
           width: 100%;
           text-align: left;
           bottom: 20px;
 
-          li:first-child{
+          li:first-child {
             border-bottom-width: 1px;
           }
 
-          h2{
+          h2 {
             font-family: $sansHeader;
             font-weight: normal;
             font-size: 26px;
           }
 
-          p{
+          p {
             font-family: $sansSerif;
             text-transform: uppercase;
             font-weight: 100;
