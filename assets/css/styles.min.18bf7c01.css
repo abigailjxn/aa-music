@@ -505,11 +505,15 @@ section.cta .divider { height: 400px; width: 1px; background: black; position: a
 
 section { padding-top: 180px; }
 
-section.music-grid .accordion__button { position: relative; display: flex; justify-content: space-between; width: 100%; text-align: left; font-family: "tenor sans"; font-size: 36px; border: none; border-bottom: 1px solid black; background: none; padding: 30px; transition: ease all 0.4s; }
+section.music-hero .abstract-4-branch { position: absolute; left: 0; top: 0; -webkit-clip-path: url(#abstract-4); clip-path: url(#abstract-4); background: #F3BB01; z-index: -1; }
+
+section.music-hero .abstract-4 { width: 0; position: absolute; }
+
+section.music-grid .accordion__button { position: relative; display: flex; justify-content: space-between; width: 100%; background: none; padding: 30px; text-align: left; font-family: "Tenor Sans", sans-serif; font-size: 36px; border: none; border-bottom: 1px solid black; border-top-left-radius: 3px; border-top-right-radius: 3px; transition: ease all 0.4s; }
 
 section.music-grid .accordion__button:focus, section.music-grid .accordion__button:hover { background: #f3e2bd; transition: ease all 0.4s; }
 
-section.music-grid .accordion__button:after { content: ""; position: relative; width: 20px; height: 20px; border: solid #979797; border-width: 0 2px 2px 0; display: inline-block; padding: 0px; margin-top: 5px; transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transition: ease all 0.4s; }
+section.music-grid .accordion__button:after { content: ""; position: relative; display: inline-block; width: 20px; height: 20px; padding: 0px; margin-top: 5px; border: solid #979797; border-width: 0 2px 2px 0; transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transition: ease all 0.4s; }
 
 section.music-grid .accordion__button:focus:after, section.music-grid .accordion__button:hover:after { transform: rotate(45deg); -webkit-transform: rotate(45deg); transition: ease all 0.4; }
 
@@ -546,6 +550,22 @@ section#thumbwrapper1 ul#origincode_videogallery li.origincode_big_li .infoLayer
 section#thumbwrapper1 ul#origincode_videogallery li.origincode_big_li .infoLayer ul h2 { font-family: "Tenor Sans", sans-serif; font-weight: normal; font-size: 26px; }
 
 section#thumbwrapper1 ul#origincode_videogallery li.origincode_big_li .infoLayer ul p { font-family: "Open Sans", sans-serif; text-transform: uppercase; font-weight: 100; text-align: left; }
+
+@media (min-width: 1440px) { section.music-cta .container { margin-bottom: 400px; } }
+
+section.music-cta .row { justify-content: center; }
+
+section.music-cta .row .center { flex-direction: column; }
+
+section.music-cta h2 { margin-bottom: 5px; font-size: 36px; }
+
+section.music-cta h3 { margin-top: 0; }
+
+section.music-cta .abstract-5-branch { position: absolute; right: 0; bottom: 0; -webkit-clip-path: url(#abstract-5); clip-path: url(#abstract-5); background: #7E559B; }
+
+@media (min-width: 1440px) { section.music-cta .abstract-5-branch { width: 1000px; } }
+
+section.music-cta .abstract-5 { width: 0; position: absolute; }
 
 section.training { background: #E8ABAA; }
 

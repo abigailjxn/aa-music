@@ -6,51 +6,76 @@ section {
 
 // Music
 
+section.music-hero {
+  .abstract-4-branch {
+    position: absolute;
+    left: 0;
+    top: 0;
+    clip-path: url("#abstract-4");
+    background: $brand3;
+    z-index: -1;
+  }
+  .abstract-4 {
+    width: 0;
+    position: absolute;
+  }
+}
+
 section.music-grid {
   .accordion {
     &__button {
       position: relative;
       display: flex;
       justify-content: space-between;
+
       width: 100%;
-      text-align: left;
-      font-family: "tenor sans";
-      font-size: 36px;
-      border: none;
-      border-bottom: 1px solid black;
       background: none;
       padding: 30px;
+
+      text-align: left;
+      font-family: $sansHeader;
+      font-size: 36px;
+
+      border: none;
+      border-bottom: 1px solid black;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+
       transition: ease all 0.4s;
 
-      &:focus, &:hover{
-        background: darken( $page-bg, 10% );
+      &:focus,
+      &:hover {
+        background: darken($page-bg, 10%);
         transition: ease all 0.4s;
       }
 
-      &:after{
+      &:after {
         content: "";
         position: relative;
+        display: inline-block;
         width: 20px;
         height: 20px;
-        border: solid $medGrey;
-        border-width: 0 2px 2px 0;
-        display: inline-block;
         padding: 0px;
         margin-top: 5px;
+
+        border: solid $medGrey;
+        border-width: 0 2px 2px 0;
+
         transform: rotate(-45deg);
         -webkit-transform: rotate(-45deg);
         transition: ease all 0.4s;
       }
-      
-      &:focus:after, &:hover:after{
+
+      &:focus:after,
+      &:hover:after {
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
         transition: ease all 0.4;
       }
     }
 
-    &__button.expanded{
-      &:after{
+    &__button.expanded {
+      &:after {
         transform: rotate(45deg) scale(1.2);
         -webkit-transform: rotate(45deg) scale(1.2);
         transition: ease all 0.4;
@@ -61,14 +86,14 @@ section.music-grid {
       max-height: 0;
       overflow: hidden;
       visibility: hidden;
-      transition:0.7s height, 0.7s padding, 0.7s margin, 0s visibility 0.7s;
+      transition: 0.7s height, 0.7s padding, 0.7s margin, 0s visibility 0.7s;
     }
-    &__section.open{
+    &__section.open {
       margin-top: 120px;
       max-height: 100%;
-      overflow:auto;
+      overflow: auto;
       visibility: visible;
-      transition:0.4s height, 0.4s padding, 0.4s margin;
+      transition: 0.4s height, 0.4s padding, 0.4s margin;
     }
   }
 }
@@ -114,7 +139,7 @@ section#thumbwrapper1 {
         }
       }
 
-      &:focus-within{
+      &:focus-within {
         outline: 4px solid $brand2;
       }
 
@@ -171,6 +196,46 @@ section#thumbwrapper1 {
         }
       }
     }
+  }
+}
+
+section.music-cta {
+  .container {
+    @media (min-width: $desktop-lg) {
+      margin-bottom: 400px;
+    }
+  }
+  .row {
+    justify-content: center;
+
+    .center {
+      flex-direction: column;
+    }
+  }
+
+  h2 {
+    margin-bottom: 5px;
+    font-size: 36px;
+  }
+  h3 {
+    margin-top: 0;
+  }
+
+  .abstract-5-branch {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    clip-path: url("#abstract-5");
+    background: $brand2;
+
+    @media(min-width: $desktop-lg){
+      width: 1000px;
+    }
+  }
+
+  .abstract-5{
+    width: 0;
+    position: absolute;
   }
 }
 
