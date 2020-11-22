@@ -513,6 +513,8 @@ section.music-grid .accordion__button:after { content: ""; position: relative; w
 
 section.music-grid .accordion__button:focus:after, section.music-grid .accordion__button:hover:after { transform: rotate(45deg); -webkit-transform: rotate(45deg); transition: ease all 0.4; }
 
+section.music-grid .accordion__button.expanded:after { transform: rotate(45deg) scale(1.2); -webkit-transform: rotate(45deg) scale(1.2); transition: ease all 0.4; }
+
 section.music-grid .accordion__section { max-height: 0; overflow: hidden; visibility: hidden; transition: 0.7s height, 0.7s padding, 0.7s margin, 0s visibility 0.7s; }
 
 section.music-grid .accordion__section.open { margin-top: 120px; max-height: 100%; overflow: auto; visibility: visible; transition: 0.4s height, 0.4s padding, 0.4s margin; }
@@ -528,6 +530,8 @@ section#thumbwrapper1 ul#origincode_videogallery { display: flex; flex-wrap: wra
 section#thumbwrapper1 ul#origincode_videogallery li.origincode_big_li { width: 100%; max-width: 100%; overflow: hidden; height: auto; padding: 0 !important; border: 1px solid #444444; border-radius: 5px; flex: 0 1 30.9%; box-sizing: border-box; margin: 15px !important; }
 
 section#thumbwrapper1 ul#origincode_videogallery li.origincode_big_li:hover .overLayer { background: rgba(0, 0, 0, 0.8); }
+
+section#thumbwrapper1 ul#origincode_videogallery li.origincode_big_li:focus-within { outline: 4px solid #7E559B; }
 
 section#thumbwrapper1 ul#origincode_videogallery li.origincode_big_li a { position: absolute; display: block; width: 100%; max-width: 100%; top: 0; left: 0; z-index: 6; border-radius: 5px; height: 100%; }
 

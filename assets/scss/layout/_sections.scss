@@ -49,6 +49,14 @@ section.music-grid {
       }
     }
 
+    &__button.expanded{
+      &:after{
+        transform: rotate(45deg) scale(1.2);
+        -webkit-transform: rotate(45deg) scale(1.2);
+        transition: ease all 0.4;
+      }
+    }
+
     &__section {
       max-height: 0;
       overflow: hidden;
@@ -104,6 +112,10 @@ section#thumbwrapper1 {
         .overLayer {
           background: $black80;
         }
+      }
+
+      &:focus-within{
+        outline: 4px solid $brand2;
       }
 
       a {
