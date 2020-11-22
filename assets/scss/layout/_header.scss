@@ -77,8 +77,34 @@ header {
           padding: 10px 25px;
           margin-left: 70px;
   
+          &::before{
+            content: " ";
+            position: absolute;
+            background: black;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            height: 100%;
+            width: 0%;
+            border-radius: 30px;
+            transition: ease all .3s;
+            z-index: -1;
+          }
+
           &:after{
             display: none;
+          }
+        }
+
+        li:last-of-type:hover{
+          border-color: transparent;
+
+          &:before{
+            width: 100%;
+            transition: ease all .3s;
+          }
+          a{
+            color: white;
           }
         }
       }

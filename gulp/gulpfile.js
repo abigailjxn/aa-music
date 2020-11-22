@@ -21,6 +21,7 @@ const settings = {
   // Include JS Libraries here to be compiled
   jsFiles: [
     "../assets/js/lib/modernizr.js",
+    "../assets/js/lib/anime.js",
     "../assets/js/site.js",
   ],
 };

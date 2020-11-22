@@ -347,7 +347,11 @@ header .logo img { width: 80px; }
   header nav ul li:after { position: absolute; bottom: -2px; left: 50%; transform: translateX(-50%); width: 0%; transition: 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55) all; content: ""; }
   header nav ul li a { text-decoration: none; text-transform: uppercase; }
   header nav ul li:last-of-type { border: 1px solid black; border-radius: 25px; padding: 10px 25px; margin-left: 70px; }
-  header nav ul li:last-of-type:after { display: none; } }
+  header nav ul li:last-of-type::before { content: " "; position: absolute; background: black; left: 50%; top: 50%; transform: translate(-50%, -50%); height: 100%; width: 0%; border-radius: 30px; transition: ease all .3s; z-index: -1; }
+  header nav ul li:last-of-type:after { display: none; }
+  header nav ul li:last-of-type:hover { border-color: transparent; }
+  header nav ul li:last-of-type:hover:before { width: 100%; transition: ease all .3s; }
+  header nav ul li:last-of-type:hover a { color: white; } }
 
 @media (max-width: 767px) { header .button-wrapper { position: absolute; width: 100%; top: 0px; right: 0px; } }
 
@@ -511,7 +515,7 @@ section.music-hero .abstract-4 { width: 0; position: absolute; }
 
 section.music-grid .accordion__button { position: relative; display: flex; justify-content: space-between; width: 100%; background: none; padding: 30px; text-align: left; font-family: "Tenor Sans", sans-serif; font-size: 36px; border: none; border-bottom: 1px solid black; border-top-left-radius: 3px; border-top-right-radius: 3px; transition: ease all 0.4s; }
 
-section.music-grid .accordion__button:focus, section.music-grid .accordion__button:hover { background: #f3e2bd; transition: ease all 0.4s; }
+section.music-grid .accordion__button:focus, section.music-grid .accordion__button:hover { background: #f3e2bd; transition: ease all 0.4s; border: 1px solid black; }
 
 section.music-grid .accordion__button:after { content: ""; position: relative; display: inline-block; width: 20px; height: 20px; padding: 0px; margin-top: 5px; border: solid #979797; border-width: 0 2px 2px 0; transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transition: ease all 0.4s; }
 

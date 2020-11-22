@@ -47,6 +47,7 @@ section.music-grid {
       &:hover {
         background: darken($page-bg, 10%);
         transition: ease all 0.4s;
+        border: 1px solid black;
       }
 
       &:after {
