@@ -3,20 +3,19 @@
 header {
   position: absolute;
   width: 100%;
+  background: none;
   top: 0px;
-  background: $white;
   z-index: 1000;
-  padding: 60px 0px;
-
+  padding: 40px 0px;
+  
   @media (min-width: 768px) {
-    background: none;
     padding: 70px 0px 40px;
   }
 
   .row {
     position: relative;
 
-    @media(min-width: $desktop-sm){
+    @media (min-width: $desktop-sm) {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -24,60 +23,63 @@ header {
   }
 
   .logo {
+    @media(max-width: 767px){
+      flex: 0 1 50%;
+    }
     img {
       width: 80px;
     }
   }
 
-  nav{
-    @media(min-width: $desktop-sm){
-      ul{
-          display: flex;
-          justify-content: space-evenly;
-  
-        li{
+  nav {
+    @media (min-width: $desktop-sm) {
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+
+        li {
           display: flex;
           align-items: center;
           position: relative;
-  
-          &.current-menu-item{
+
+          &.current-menu-item {
             border-bottom: 1px solid black;
             padding: 0 5px;
-  
-            &:hover:after{
+
+            &:hover:after {
               display: none;
             }
           }
-  
-          &:hover:after{
+
+          &:hover:after {
             height: 1px;
             width: 100%;
             background: black;
           }
-          
-          &:after{
+
+          &:after {
             position: absolute;
             bottom: -2px;
             left: 50%;
             transform: translateX(-50%);
             width: 0%;
-            transition: .3s cubic-bezier(.68,-.55,.27,1.55) all;
+            transition: 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55) all;
             content: "";
           }
-  
-          a{
+
+          a {
             text-decoration: none;
             text-transform: uppercase;
           }
         }
-  
-        li:last-of-type{
+
+        li:last-of-type {
           border: 1px solid black;
           border-radius: 25px;
           padding: 10px 25px;
           margin-left: 70px;
-  
-          &::before{
+
+          &::before {
             content: " ";
             position: absolute;
             background: black;
@@ -87,36 +89,45 @@ header {
             height: 100%;
             width: 0%;
             border-radius: 30px;
-            transition: ease all .3s;
+            transition: ease all 0.3s;
             z-index: -1;
           }
 
-          &:after{
+          &:after {
             display: none;
           }
         }
 
-        li:last-of-type:hover{
+        li:last-of-type:hover {
           border-color: transparent;
 
-          &:before{
+          &:before {
             width: 100%;
-            transition: ease all .3s;
+            transition: ease all 0.3s;
           }
-          a{
+          a {
             color: white;
           }
         }
       }
     }
+
+    &.flex-7{
+      @media(max-width: 1023px){
+        display:none;
+      }
+    }
   }
 
   .button-wrapper {
-    @media (max-width: 767px) {
-      position: absolute;
-      width: 100%;
-      top: 0px;
-      right: 0px;
+    display:block;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    
+    @media (min-width: $desktop-sm) {
+      display:none;
     }
 
     .hamburger {
@@ -194,6 +205,10 @@ header {
     visibility: hidden;
     overflow: hidden;
     transition: 1s ease all;
+
+    @media(min-width: $desktop-sm){
+      display: none;
+    }
 
     .navOpen & {
       transition: 1s ease all;

@@ -1,19 +1,34 @@
 // Sections
 
 section {
-  padding-top: 180px;
+  padding-top: 60px;
+
+  @media (min-width: $tablet) {
+    padding-top: 180px;
+  }
+
+  &:first-of-type {
+    @media (max-width: 767px) {
+      padding-top: 220px;
+    }
+  }
 }
 
 // Music
 
 section.music-hero {
   .abstract-4-branch {
-    position: absolute;
-    left: 0;
-    top: 0;
-    clip-path: url("#abstract-4");
-    background: $brand3;
-    z-index: -1;
+    display: none;
+    @media(min-width: $tablet){
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      clip-path: url("#abstract-4");
+      background: $brand3;
+      z-index: -1;
+
+    }
   }
   .abstract-4 {
     width: 0;
@@ -34,7 +49,7 @@ section.music-grid {
 
       text-align: left;
       font-family: $sansHeader;
-      font-size: 36px;
+      font-size: 30px;
 
       border: none;
       border-bottom: 1px solid black;
@@ -42,6 +57,11 @@ section.music-grid {
       border-top-right-radius: 3px;
 
       transition: ease all 0.4s;
+      cursor: pointer;
+
+      @media(min-width: $tablet){
+        font-size: 36px;
+      }
 
       &:focus,
       &:hover {
@@ -54,8 +74,8 @@ section.music-grid {
         content: "";
         position: relative;
         display: inline-block;
-        width: 20px;
-        height: 20px;
+        width: 14px;
+        height: 14px;
         padding: 0px;
         margin-top: 5px;
 
@@ -65,7 +85,13 @@ section.music-grid {
         transform: rotate(-45deg);
         -webkit-transform: rotate(-45deg);
         transition: ease all 0.4s;
+
+        @media(min-width: $tablet){
+          width: 20px;
+          height: 20px;
+        }
       }
+
 
       &:focus:after,
       &:hover:after {
@@ -90,11 +116,15 @@ section.music-grid {
       transition: 0.7s height, 0.7s padding, 0.7s margin, 0s visibility 0.7s;
     }
     &__section.open {
-      margin-top: 120px;
+      margin-top: 40px;
       max-height: 100%;
       overflow: auto;
       visibility: visible;
       transition: 0.4s height, 0.4s padding, 0.4s margin;
+
+      @media (min-width: $desktop-lg) {
+        margin-top: 120px;
+      }
     }
   }
 }
@@ -125,14 +155,25 @@ section#thumbwrapper1 {
     li.origincode_big_li {
       width: 100%;
       max-width: 100%;
+      flex: 0 1 100%;
+
       overflow: hidden;
       height: auto;
       padding: 0 !important;
       border: 1px solid #444444;
       border-radius: 5px;
-      flex: 0 1 30.9%;
       box-sizing: border-box;
       margin: 15px !important;
+
+      @media (min-width: $tablet) {
+        flex: 0 1 45%;
+      }
+      @media (min-width: $desktop-sm) {
+        flex: 0 1 30%;
+      }
+      @media (min-width: $desktop-lg) {
+        flex: 0 1 30.9%;
+      }
 
       &:hover {
         .overLayer {
@@ -140,9 +181,7 @@ section#thumbwrapper1 {
         }
       }
 
-      &:focus-within {
-        outline: 4px solid $brand2;
-      }
+      // need to duplicate hover styles for :focus
 
       a {
         position: absolute;
@@ -201,6 +240,14 @@ section#thumbwrapper1 {
 }
 
 section.music-cta {
+  padding-bottom: 120px;
+
+  @media(min-width: $tablet){
+    padding-bottom: 200px;
+  }
+  @media(min-width: $desktop-sm){
+    padding-bottom: 320px;
+  }
   .container {
     @media (min-width: $desktop-lg) {
       margin-bottom: 400px;
@@ -229,12 +276,16 @@ section.music-cta {
     clip-path: url("#abstract-5");
     background: $brand2;
 
-    @media(min-width: $desktop-lg){
+    @media (min-width: $desktop-sm) {
       width: 1000px;
+    }
+
+    @media(max-width: 767px){
+      display: none;
     }
   }
 
-  .abstract-5{
+  .abstract-5 {
     width: 0;
     position: absolute;
   }

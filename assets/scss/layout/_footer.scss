@@ -11,6 +11,11 @@ footer {
 
   .container {
     height: 100%;
+
+    @media (max-width: 767px) {
+      padding: 40px 20px 20px;
+      text-align: center;
+    }
   }
 
   .row {
@@ -24,25 +29,48 @@ footer {
     text-decoration: none;
   }
 
-  .footer-decor{
-    width: 150px;
-    position: absolute;
-    top: -90px;
-    left: 25%;
+  .copyright {
+    width: 100%;
+    @media (min-width: $tablet) {
+      width: initial;
+    }
+  }
 
+  .footer-decor {
+    display: none;
+    .home & {
+      display: block;
+      width: 150px;
+      position: absolute;
+      top: -90px;
+      left: 25%;
+    }
   }
 
   .socials {
+    width: 100%;
+
+    
+    @media (min-width: $tablet) {
+      width: 40%;
+    }
     @media (min-width: $desktop-lg) {
       width: 15%;
     }
 
     ul {
+      width: 100%;
       display: flex;
+      justify-content: space-evenly;
       align-items: center;
-      justify-content: space-between;
-      width: auto;
       padding: 0;
+      margin-top: 40px;
+
+      @media (min-width: $tablet) {
+        width: initial;
+        justify-content: space-between;
+        margin: auto;
+      }
 
       li {
         width: 28px;

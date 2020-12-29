@@ -38,7 +38,7 @@ $logo = get_field('logo');
 							<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>">
 						</a>
 					</div>
-					<div class="flex-10 button-wrapper text-right hide-desktop">
+					<div class="flex-10 button-wrapper text-right">
 						<button class="hamburger" id="hamburger" aria-label="Menu Button" tabindex="0">
 							<div>
 								<span></span>
@@ -48,7 +48,7 @@ $logo = get_field('logo');
 						</button>
 					</div>
 
-					<nav class="flex-7 text-right hide-mobile">
+					<nav class="flex-7 text-right">
 						<ul>
 							<?php foreach ($navMain as $m) { ?>
 								<li class="<?php echo implode(' ', $m->classes); ?>">
@@ -60,7 +60,7 @@ $logo = get_field('logo');
 				</div>
 			</div>
 
-			<div class="nav-wrapper hide-desktop">
+			<div class="nav-wrapper">
 				<div class="nav-background"></div>
 				<div class="nav-menu">
 					<div class="container">

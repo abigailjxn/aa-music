@@ -33,7 +33,6 @@ get_header();
                 <?php echo do_shortcode("[origincode_videogallery id='1']"); ?>
             </div>
 
-    
             <button id="accordion-open-2" class="accordion__button" aria-expanded="false">
                 Featured
             </button>
@@ -96,13 +95,12 @@ get_header();
             <div class="flex-4 center">
                 <h2 class="sansHeader-lg normal">Like what you hear?</h2>
                 <h3 class="sansHeader-med normal">Contact Amanda</h3>
-                <a href="#" class="button uppercase">Get in Touch</a>
+                <?php the_field('typeform_embed_code'); ?>
             </div>
         </div>
     </div>
     <img class="abstract-5-branch" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-5-branch.png" alt=" ">
     <img class="style-svg abstract-5" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-5.svg" alt=" ">
-
 </section>
            
           
