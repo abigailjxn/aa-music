@@ -13,8 +13,8 @@
     <div class="container">
         <div class="row">
             <div class="flex-6">
-                <h1 class="sansHeader-xl uppercase normal"><?php the_title();?></h1>
-                <p><?php the_field('subtitle');?></p>
+                <h1 class="sansHeader-xl uppercase normal text-center"><?php the_title();?></h1>
+                <p class="sansHeader-lg text-center"><?php the_field('subtitle');?></p>
             </div>
             <div class="flex-6">
                 <div class="morph-container">

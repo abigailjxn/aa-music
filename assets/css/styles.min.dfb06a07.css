@@ -495,9 +495,17 @@ footer .socials ul li { width: 28px; }
 
 body { background-color: #FBF5E8; }
 
+h1 { margin-bottom: 0; }
+
 @media (min-width: 1440px) { section.hero { padding-top: 320px; } }
 
 section.hero .row { align-items: center; }
+
+section.hero p { margin-top: 0; }
+
+.morph-container svg { width: 100%; height: auto; margin-top: 60px; }
+
+@media (min-width: 1440px) { .morph-container svg { margin-top: 0; width: initial; } }
 
 @media (min-width: 1440px) { section.featured-work { padding-bottom: 180px; } }
 
@@ -511,11 +519,17 @@ section.cta .music-cta { flex-direction: column; }
 
 section.cta .divider { height: 400px; width: 1px; background: black; position: absolute; left: 50%; transform: translateX(-50%); }
 
-.abstract-1 { position: absolute; top: 0; z-index: -1; }
+.abstract-1 { position: absolute; top: 0; z-index: -1; width: 100%; height: auto; }
 
-.abstract-2 { position: absolute; right: 0; z-index: -1; }
+@media (min-width: 768px) { .abstract-1 { width: 60%; } }
 
-@media (min-width: 1440px) { .abstract-2 { width: 950px; height: auto; top: 500px; } }
+@media (min-width: 1024px) { .abstract-1 { width: initial; } }
+
+.abstract-2 { position: absolute; right: 0; bottom: 80px; z-index: -1; width: 100%; height: auto; }
+
+@media (min-width: 768px) { .abstract-2 { width: 50%; bottom: 260px; } }
+
+@media (min-width: 1440px) { .abstract-2 { width: 950px; height: auto; top: 500px; bottom: initial; } }
 
 @media (min-width: 1024px) { .branch-1 { width: 430px; } }
 

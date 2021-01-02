@@ -4,6 +4,10 @@ body {
   background-color: $page-bg;
 }
 
+h1{
+  margin-bottom: 0;
+}
+
 section.hero {
   @media (min-width: $desktop-lg) {
     padding-top: 320px;
@@ -11,6 +15,23 @@ section.hero {
 
   .row {
     align-items: center;
+  }
+
+  p{
+    margin-top: 0;
+  }
+}
+
+.morph-container{
+  svg{
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+
+    @media(min-width: $desktop-lg){
+      margin-top: 0;
+      width: initial;
+    }
   }
 }
 
@@ -32,6 +53,7 @@ section.cta {
 
   .contact-form{
     text-align: center;
+
   }
 
   .music-cta {
@@ -54,16 +76,37 @@ section.cta {
   position: absolute;
   top: 0;
   z-index: -1;
+
+  width: 100%;
+  height: auto;
+
+  @media(min-width: $tablet){
+    width: 60%;
+  }
+
+  @media(min-width: $desktop-sm){
+    width: initial;
+  }
 }
 .abstract-2 {
   position: absolute;
   right: 0;
+  bottom: 80px;
   z-index: -1;
+
+  width: 100%;
+  height: auto;
+
+  @media(min-width: $tablet){
+    width: 50%;
+    bottom: 260px;
+  }
 
   @media (min-width: $desktop-lg) {
     width: 950px;
     height: auto;
     top: 500px;
+    bottom: initial;
   }
 }
 
