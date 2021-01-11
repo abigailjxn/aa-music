@@ -80,7 +80,7 @@
             </div>
             <div class="divider"></div>
             <div class="flex-5 push-2">
-                <div class="music-cta flex-center">
+                <div class="music-cta flex-center text-center">
                     <h2 class="sansHeader-lg normal"><?php echo $contact['link_header']?></h2>
                     <a href="<?php echo $contact['link']['url']?>" class="button uppercase"><?php echo $contact['link']['title']?></a>
                 </div>

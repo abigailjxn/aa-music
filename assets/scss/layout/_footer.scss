@@ -40,10 +40,27 @@ footer {
     display: none;
     .home & {
       display: block;
-      width: 150px;
       position: absolute;
-      top: -90px;
-      left: 25%;
+      width: 50px;
+      right: 5%;
+      top: -30px;
+      
+      @media(min-width: $tablet){
+        left: 2%;
+        right: initial;
+      }
+
+      @media(min-width: $desktop-sm){
+        width: 100px;
+        top: -70px;
+        left: 30%;
+      }
+      @media(min-width: $desktop-lg){
+        width: 150px;
+        top: -90px;
+        left: 25%;
+
+      }
     }
   }
 
