@@ -4,16 +4,16 @@
 
 body.login {
 	/*Update the hex below to be a brand color*/
-	background:#F16356;
+	background:#FBF5E8;
 	background-size: cover;
 }
 
 /* LOGIN PAGE */
 #login h1 a {
 	/* Update the URL below to the theme's logo file */
-	/* background: url('../assets/img/amerifirst-footer-logo.png') no-repeat; */
+	background: url('../assets/img/aa-logo.png') no-repeat;
 	background-position: 50%;
-	background-size: 100%;
+	background-size: contain;
 	display: block;
 	width: 250px;
 	height: 150px;
@@ -34,7 +34,7 @@ body.login {
 
 
 .login #nav a, .login #backtoblog a, #login_error a {
-	color:#fff !important;
+	color:#444444 !important;
 	-webkit-transition: color 0.2s ease-out;
        -moz-transition: color 0.2s ease-out;
         -ms-transition: color 0.2s ease-out;
@@ -68,7 +68,8 @@ body.login {
 }
 
 .wp-core-ui .button-primary{
-	background:#F16356 !important;
+	color:#2B2B2B;
+	background:#E8ABAA !important;
 	border:none;
 	text-shadow: none;
 	box-shadow: none;
