@@ -248,6 +248,9 @@ section.music-cta {
   @media(min-width: $desktop-sm){
     padding-bottom: 320px;
   }
+  @media(min-width: $desktop-sm){
+    padding-bottom: 0;
+  }
   .container {
     @media (min-width: $desktop-lg) {
       margin-bottom: 400px;

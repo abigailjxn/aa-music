@@ -659,6 +659,8 @@ section.music-cta { padding-bottom: 120px; }
 
 @media (min-width: 1024px) { section.music-cta { padding-bottom: 320px; } }
 
+@media (min-width: 1024px) { section.music-cta { padding-bottom: 0; } }
+
 @media (min-width: 1440px) { section.music-cta .container { margin-bottom: 400px; } }
 
 section.music-cta .row { justify-content: center; }
