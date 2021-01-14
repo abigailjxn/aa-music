@@ -322,6 +322,16 @@ section.training {
   margin-top: -0.3em;
 }
 
+.birds-4{
+  position: absolute;
+  
+  @media(min-width: $desktop-lg){
+    width: 600px;
+    right: -20px;
+
+  }
+}
+
 section.collab {
   background: $white;
 }
@@ -332,6 +342,17 @@ section.collab {
   right: 0;
   bottom: -40px;
 
+}
+
+.branch-4{
+  width: 50%;
+  bottom: -50px;
+  position: relative;
+  z-index: 10;
+
+  @media(min-width: $tablet){
+    
+  }
 }
 
 section.about-cta {
@@ -383,6 +404,9 @@ section.about-cta {
 
     h2{
       font-size: 28px;
+      @media(min-width: $tablet){
+        font-size: 36px;
+      }
     }
 
     a {
@@ -393,11 +417,13 @@ section.about-cta {
       
       @media(min-width: $tablet){
         border-color: white;
-
+        background: transparent;
       }
     }
 
   }
+
+  
 
   .flower-shape {
     background: $brand2;
@@ -410,8 +436,7 @@ section.about-cta {
     left: 50%;
     
     @media(min-width: $tablet){
-      // width: 880px;
-
+      top: 50%;
     }
 
   }
