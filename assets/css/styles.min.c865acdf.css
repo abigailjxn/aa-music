@@ -679,7 +679,17 @@ section.music-cta .abstract-5-branch { position: absolute; right: 0; bottom: 0; 
 
 section.music-cta .abstract-5 { width: 0; position: absolute; }
 
-section.training { background: #E8ABAA; }
+section.hero-about { overflow-x: hidden; }
+
+section.hero-about h1 { display: flex; flex-direction: column; }
+
+section.hero-about h1 span { margin-left: 1em; }
+
+@media (min-width: 768px) { section.hero-about h1 span { margin-left: 1.5em; } }
+
+.about-hero { position: relative; left: -45%; width: 145%; overflow-x: hidden; bottom: 0; }
+
+section.training { background: #E8ABAA; margin-top: -0.3em; }
 
 section.collab { background: #ffffff; }
 
