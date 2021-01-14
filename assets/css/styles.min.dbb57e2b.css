@@ -693,7 +693,9 @@ section.training { background: #E8ABAA; margin-top: -0.3em; }
 
 section.collab { background: #ffffff; }
 
-section.about-cta { display: flex; align-items: center; justify-content: center; padding: 0; }
+.branch-3 { width: 50%; position: absolute; right: 0; bottom: -40px; }
+
+section.about-cta { display: flex; align-items: center; justify-content: center; padding: 150px 0 200px; }
 
 @media (min-width: 768px) { section.about-cta { background-size: cover; width: 100%; }
   section.about-cta:before { display: block; content: ""; width: 100%; padding-top: 72.5%; } }
@@ -702,11 +704,15 @@ section.about-cta { display: flex; align-items: center; justify-content: center;
 
 section.about-cta .row { justify-content: center; }
 
-section.about-cta .text { position: absolute; top: 25%; left: 50%; transform: translate(-50%); z-index: 100; color: white; text-align: center; }
+section.about-cta .text { position: absolute; width: 80%; top: 25%; left: 50%; transform: translate(-50%); z-index: 100; color: white; text-align: center; }
 
-section.about-cta .text a { color: white; border-color: white; }
+section.about-cta .text h2 { font-size: 28px; }
 
-section.about-cta .flower-shape { background: #7E559B; width: 880px; -webkit-clip-path: url(#cta-shape); clip-path: url(#cta-shape); }
+section.about-cta .text a { color: white; font-size: small; background: black; border-color: black; }
+
+@media (min-width: 768px) { section.about-cta .text a { border-color: white; } }
+
+section.about-cta .flower-shape { background: #7E559B; -webkit-clip-path: url(#cta-shape); clip-path: url(#cta-shape); width: 100%; height: auto; position: absolute; top: 40%; transform: translate(-50%, -50%); left: 50%; }
 
 section.about-cta .cta-shape { width: 0; }
 

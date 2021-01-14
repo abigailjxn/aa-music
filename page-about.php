@@ -6,6 +6,21 @@ $experience = get_field('experience');
 $inspiration = get_field('inspiration');
 $cta = get_field('about_cta');
 
+$absolute_path = "M25.1682808,90.9614361 C-58.2613728,13.9294805 78.0703376,0 252.87998,0 C427.689623,0 578.597934,91.2498538 770.597934,63.466237 C962.597934,35.6826201 852.544974,166.609512 770.597934,206.26527 C688.650895,245.921028 607.995008,219.340428 400.097934,242.758356 C192.20086,266.176285 182.154567,300.070506 90.8762506,224.663887 C-0.402065623,149.257267 108.597934,167.993392 25.1682808,90.9614361 Z";
+function regex_callback($matches) {
+    static $count = -1;
+    $count++;
+    $width = 878;
+    $height = 271;
+    if($count % 2) {
+        return $matches[0] / $height;
+    } else {
+        return $matches[0] / $width;
+    }
+}
+$relative_path = preg_replace_callback('(\d+(\.\d+)?)', 'regex_callback', $absolute_path);
+print_r($relative_path);
+
 
 ?>
 
@@ -90,7 +105,7 @@ $cta = get_field('about_cta');
             </ul>
         </div>
     </div>
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/branch-3.png" alt=" ">
+    <img class="branch-3" src="<?php echo get_template_directory_uri(); ?>/assets/img/branch-3.png" alt=" ">
 </section>
           
 <section class="inspiration">
@@ -104,7 +119,7 @@ $cta = get_field('about_cta');
             </div>
         </div>
     </div>
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/branch-4.png" alt=" ">
+    <img class="branch-4" src="<?php echo get_template_directory_uri(); ?>/assets/img/branch-4.png" alt=" ">
 </section>
 
 <section class="about-cta" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/mural.jpg');" aria-label="">

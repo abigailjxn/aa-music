@@ -294,23 +294,22 @@ section.music-cta {
 
 // About
 section.hero-about {
-  overflow-x:hidden;
-  h1{
+  overflow-x: hidden;
+  h1 {
     display: flex;
     flex-direction: column;
 
-    span{
+    span {
       margin-left: 1em;
-      
-      @media(min-width: $tablet){
-        margin-left: 1.5em;
 
+      @media (min-width: $tablet) {
+        margin-left: 1.5em;
       }
     }
   }
 }
 
-.about-hero{
+.about-hero {
   position: relative;
   left: -45%;
   width: 145%;
@@ -327,11 +326,19 @@ section.collab {
   background: $white;
 }
 
+.branch-3 {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+
+}
+
 section.about-cta {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding: 150px 0 200px;
 
   @media (min-width: $tablet) {
     background-size: cover;
@@ -361,23 +368,52 @@ section.about-cta {
 
   .text {
     position: absolute;
+    width: 80%;
     top: 25%;
     left: 50%;
     transform: translate(-50%);
+
     z-index: 100;
     color: white;
     text-align: center;
 
+    @media(min-width: $tablet){
+
+    }
+
+    h2{
+      font-size: 28px;
+    }
+
     a {
       color: white;
-      border-color: white;
+      font-size: small;
+      background: black;
+      border-color: black;
+      
+      @media(min-width: $tablet){
+        border-color: white;
+
+      }
     }
+
   }
 
   .flower-shape {
     background: $brand2;
-    width: 880px;
     clip-path: url("#cta-shape");
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    
+    @media(min-width: $tablet){
+      // width: 880px;
+
+    }
+
   }
 
   .cta-shape {
