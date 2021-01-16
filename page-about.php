@@ -52,11 +52,7 @@ $cta = get_field('about_cta');
                 <img class="birds-4" src="<?php echo get_template_directory_uri(); ?>/assets/img/birds-4.png" alt=" ">
                 <img class="style-svg abstract-6" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-6.svg" alt=" ">
                 <img class="style-svg abstract-7" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-7.svg" alt=" ">
-
             </div>
-
-
-            <!-- birds illustration  -->
         </div>
     </div>
 </section>
@@ -145,6 +141,12 @@ $cta = get_field('about_cta');
                 </h2>
                 <?php echo $inspiration['content']; ?>
             </div>
+            <div class="image-container">
+                <img class="style-svg about-3" src="<?php echo get_template_directory_uri(); ?>/assets/img/about-3.svg" alt=" ">
+                <img class="style-svg about-4" src="<?php echo get_template_directory_uri(); ?>/assets/img/about-4.svg" alt=" ">
+                <img class="style-svg abstract-9" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-6.svg" alt=" ">
+            </div>
+
         </div>
     </div>
     <img class="branch-4" src="<?php echo get_template_directory_uri(); ?>/assets/img/branch-4.png" alt=" ">

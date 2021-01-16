@@ -691,21 +691,31 @@ section.hero-about h1 span { margin-left: 1em; }
 
 section.training { background: #E8ABAA; margin-top: -0.3em; }
 
+@media (min-width: 1440px) { section.training { padding-bottom: 180px; } }
+
+section.training h2 { margin-bottom: 40px; }
+
+@media (min-width: 1440px) { section.training h2 { margin-bottom: 60px; } }
+
+section.training p { margin-bottom: 2em; }
+
 .birds-4 { position: absolute; z-index: 1; }
 
-@media (min-width: 1440px) { .birds-4 { width: 600px; right: -20px; } }
+@media (min-width: 1440px) { .birds-4 { width: 600px; right: -20px; top: 50%; transform: translateY(10%); } }
 
-.abstract-6 { position: absolute; top: 200px; }
+.abstract-6 { position: absolute; top: 260px; }
 
-.abstract-7 { position: absolute; right: 20px; top: -40px; }
+.abstract-7 { position: absolute; right: 20px; top: 0px; }
 
-section.experience { align-items: center; }
+section.experience { background: #ffffff; align-items: center; }
 
-.decor-3 { position: absolute; z-index: -1; }
+.decor-3 { position: absolute; z-index: 0; }
 
 @media (min-width: 1440px) { .decor-3 { left: 120px; top: -120px; } }
 
-.abstract-8 { position: relative; right: -50%; top: -25%; }
+.about-2 { position: relative; z-index: 1; }
+
+.abstract-8 { position: relative; right: -50%; top: -25%; z-index: 10; }
 
 section.collab { background: #ffffff; }
 
@@ -723,7 +733,25 @@ section.collab h2:after { position: relative; content: " "; width: 120px; height
 
 .branch-3 { width: 50%; position: absolute; right: 0; bottom: -40px; }
 
+@media (min-width: 1440px) { .branch-3 { width: 40%; bottom: -100px; } }
+
+section.inspiration .row { position: relative; }
+
+@media (min-width: 1440px) { section.inspiration .row { justify-content: space-between; } }
+
+section.inspiration .row .flex-4 { margin-top: 20%; }
+
+section.inspiration .image-container { position: relative; width: 60%; }
+
+.about-3 { position: relative; right: -80px; }
+
+.about-4 { position: absolute; left: -25%; bottom: -100px; }
+
+.abstract-9 { position: absolute; bottom: -40px; right: 0px; transform: scaleX(-1); }
+
 .branch-4 { width: 50%; bottom: -50px; position: relative; z-index: 10; }
+
+@media (min-width: 1440px) { .branch-4 { width: 40%; bottom: -160px; } }
 
 section.about-cta { display: flex; align-items: center; justify-content: center; padding: 150px 0 200px; }
 
