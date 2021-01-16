@@ -324,6 +324,7 @@ section.training {
 
 .birds-4{
   position: absolute;
+  z-index: 1;
   
   @media(min-width: $desktop-lg){
     width: 600px;
@@ -332,8 +333,87 @@ section.training {
   }
 }
 
+.abstract-6{
+  position: absolute;
+  top: 200px;  
+}
+
+.abstract-7{
+  position: absolute;
+  right: 20px;
+  top: -40px;
+}
+
+section.experience{
+  align-items: center;
+}
+
+.decor-3{
+  position: absolute;
+  z-index: -1;
+  
+  @media(min-width: $desktop-lg){
+    left: 120px;
+    top: -120px;
+
+  }
+}
+
+.about-2{
+}
+
+.abstract-8{
+  position: relative;
+  right: -50%;
+  top: -25%;
+}
+
 section.collab {
   background: $white;
+
+  .row{
+    flex-direction: column;
+  }
+
+  h2{
+    margin: auto;
+    position: relative;
+
+    &:after{
+      position: relative;
+      content: " ";
+      width: 120px;
+      height: 2px;
+      background: black;
+      position: relative;
+
+      display: block;
+      bottom: -70px;
+      margin: auto;
+      margin-bottom: 100px;
+    }
+  }
+}
+
+.logo-list{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.logo{
+
+  @media(min-width: $desktop-lg){
+    width: 300px;
+    margin-right: 150px;
+    margin-bottom: 185px;
+  }
+  &:nth-of-type(3n){
+    @media(min-width: $desktop-lg){
+      margin-right: 0;
+    }
+  }
 }
 
 .branch-3 {

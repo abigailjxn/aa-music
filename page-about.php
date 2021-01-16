@@ -50,8 +50,8 @@ $cta = get_field('about_cta');
             </div>
             <div class="flex-7 push-1">
                 <img class="birds-4" src="<?php echo get_template_directory_uri(); ?>/assets/img/birds-4.png" alt=" ">
-                <img class="style-svg" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-6.svg" alt=" ">
-                <img class="style-svg" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-7.svg" alt=" ">
+                <img class="style-svg abstract-6" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-6.svg" alt=" ">
+                <img class="style-svg abstract-7" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-7.svg" alt=" ">
 
             </div>
 
@@ -65,6 +65,9 @@ $cta = get_field('about_cta');
     <div class="container">
         <div class="row">
                 <div class="flex-7">
+                    <img class="decor-3" src="<?php echo get_template_directory_uri(); ?>/assets/img/decor-3.png" alt=" " >
+                    <img class="style-svg about-2" src="<?php echo get_template_directory_uri(); ?>/assets/img/about-2.svg" alt="A profile photo of Amanda at twilight.">
+                    <img class="style-svg abstract-8" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-8.svg" alt=" ">
                     
                 </div>
                 <div class="flex-4 push-1">
@@ -80,35 +83,53 @@ $cta = get_field('about_cta');
 <section class="collab">
     <div class="container">
         <div class="row">
-            <h2 class="sansHeader-lg normal"><?php echo $experience['logo_header']; ?></h2>
+            <h2 class="sansHeader-lg normal text-center"><?php echo $experience['logo_header']; ?></h2>
             <ul class="logo-list">
+                <?php if ($experience['logo_1']): ?>
                 <li class="logo">
-                    <img src="" alt="">
+                    <img src="<?php echo esc_url($experience['logo_1']['url']); ?>" alt="<?php echo esc_attr($experience['logo_1']['alt']); ?>">
                 </li>
+                <?php endif; ?>
+                <?php if ($experience['logo_2']): ?>
                 <li class="logo">
-                    <img src="" alt="">
+                    <img src="<?php echo esc_url($experience['logo_2']['url']); ?>" alt="<?php echo esc_attr($experience['logo_2']['alt']); ?>">
                 </li>
+                <?php endif; ?>
+                <?php if ($experience['logo_3']): ?>
                 <li class="logo">
-                    <img src="" alt="">
+                    <img src="<?php echo esc_url($experience['logo_3']['url']); ?>" alt="<?php echo esc_attr($experience['logo_3']['alt']); ?>">
                 </li>
+                <?php endif; ?>
+                <?php if ($experience['logo_4']): ?>
                 <li class="logo">
-                    <img src="" alt="">
+                    <img src="<?php echo esc_url($experience['logo_4']['url']); ?>" alt="<?php echo esc_attr($experience['logo_4']['alt']); ?>">
                 </li>
+                <?php endif; ?>
+                <?php if ($experience['logo_5']): ?>
                 <li class="logo">
-                    <img src="" alt="">
+                    <img src="<?php echo esc_url($experience['logo_5']['url']); ?>" alt="<?php echo esc_attr($experience['logo_5']['alt']); ?>">
                 </li>
+                <?php endif; ?>
+                <?php if ($experience['logo_6']): ?>
                 <li class="logo">
-                    <img src="" alt="">
+                    <img src="<?php echo esc_url($experience['logo_6']['url']); ?>" alt="<?php echo esc_attr($experience['logo_6']['alt']); ?>">
                 </li>
+                <?php endif; ?>
+                <?php if ($experience['logo_7']): ?>
                 <li class="logo">
-                    <img src="" alt="">
+                    <img src="<?php echo esc_url($experience['logo_7']['url']); ?>" alt="<?php echo esc_attr($experience['logo_7']['alt']); ?>">
                 </li>
+                <?php endif; ?>
+                <?php if ($experience['logo_8']): ?>
                 <li class="logo">
-                    <img src="" alt="">
+                    <img src="<?php echo esc_url($experience['logo_8']['url']); ?>" alt="<?php echo esc_attr($experience['logo_8']['alt']); ?>">
                 </li>
+                <?php endif; ?>
+                <?php if ($experience['logo_9']): ?>
                 <li class="logo">
-                    <img src="" alt="">
+                    <img src="<?php echo esc_url($experience['logo_9']['url']); ?>" alt="<?php echo esc_attr($experience['logo_9']['alt']); ?>">
                 </li>
+                <?php endif; ?>
             </ul>
         </div>
     </div>

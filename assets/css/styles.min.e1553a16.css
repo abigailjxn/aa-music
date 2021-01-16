@@ -691,11 +691,35 @@ section.hero-about h1 span { margin-left: 1em; }
 
 section.training { background: #E8ABAA; margin-top: -0.3em; }
 
-.birds-4 { position: absolute; }
+.birds-4 { position: absolute; z-index: 1; }
 
 @media (min-width: 1440px) { .birds-4 { width: 600px; right: -20px; } }
 
+.abstract-6 { position: absolute; top: 200px; }
+
+.abstract-7 { position: absolute; right: 20px; top: -40px; }
+
+section.experience { align-items: center; }
+
+.decor-3 { position: absolute; z-index: -1; }
+
+@media (min-width: 1440px) { .decor-3 { left: 120px; top: -120px; } }
+
+.abstract-8 { position: relative; right: -50%; top: -25%; }
+
 section.collab { background: #ffffff; }
+
+section.collab .row { flex-direction: column; }
+
+section.collab h2 { margin: auto; position: relative; }
+
+section.collab h2:after { position: relative; content: " "; width: 120px; height: 2px; background: black; position: relative; display: block; bottom: -70px; margin: auto; margin-bottom: 100px; }
+
+.logo-list { display: flex; flex-wrap: wrap; align-items: center; margin-top: 100px; }
+
+@media (min-width: 1440px) { .logo { width: 300px; margin-right: 150px; margin-bottom: 185px; } }
+
+@media (min-width: 1440px) { .logo:nth-of-type(3n) { margin-right: 0; } }
 
 .branch-3 { width: 50%; position: absolute; right: 0; bottom: -40px; }
 
