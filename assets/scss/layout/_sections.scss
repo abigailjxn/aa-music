@@ -447,6 +447,9 @@ section.collab {
 }
 
 section.inspiration {
+  .container{
+    padding-bottom: 35%;
+  }
   .row {
     position: relative;
 
@@ -492,8 +495,9 @@ section.inspiration {
   @media (min-width: $tablet) {
   }
   @media (min-width: $desktop-lg) {
-    width: 40%;
-    bottom: -160px;
+    position: absolute;
+    width: 25%;
+    bottom: -150px;
   }
 }
 
