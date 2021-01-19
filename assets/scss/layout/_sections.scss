@@ -400,7 +400,7 @@ section.training {
 
   @media (min-width: $tablet) {
     position: absolute;
-    top: -220px;
+    top: 220px;
     bottom: 40px;
   }
 
@@ -618,7 +618,7 @@ section.inspiration {
   width: 80%;
   overflow: hidden;
 
-  @media (min-width: $desktop-lg) {
+  @media (min-width: $tablet) {
     top: 60%;
     left: -50%;
     width: 70%;
@@ -640,7 +640,7 @@ section.inspiration {
   position: absolute;
   transform: scaleX(-1);
 
-  @media (min-width: $desktop-lg) {
+  @media (min-width: $tablet) {
     top: 78%;
     width: 100%;
   }

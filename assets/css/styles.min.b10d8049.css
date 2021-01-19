@@ -401,9 +401,9 @@ header .nav-wrapper .nav-menu { position: absolute; top: 0; right: 0; width: 100
 
 .navOpen header .nav-wrapper .nav-menu { box-shadow: -30px 0px 150px 0px rgba(0, 0, 0, 0.2); transform: translateX(0); transition: 1s ease transform; }
 
-header .nav-wrapper .nav-menu .container { display: flex; flex-direction: column; align-items: flex-end; margin-top: 60px; padding: 50px 20px 0; text-align: right; }
+header .nav-wrapper .nav-menu .container { display: flex; flex-direction: column; align-items: flex-end; padding: 50px 20px 0; text-align: right; }
 
-@media (min-width: 375px) { header .nav-wrapper .nav-menu .container { padding: 0 20px; } }
+@media (min-width: 375px) { header .nav-wrapper .nav-menu .container { margin-top: 60px; padding: 0 20px; } }
 
 @media (min-width: 768px) { header .nav-wrapper .nav-menu .container { padding-right: 80px; padding-left: 40px; margin-top: 80px; } }
 
@@ -411,7 +411,7 @@ header .nav-wrapper .nav-menu .container { display: flex; flex-direction: column
 
 @media all and (min-width: 1024px) and (-ms-high-contrast: none), (-ms-high-contrast: active) { header .nav-wrapper .nav-menu .container { width: 100%; } }
 
-header .nav-wrapper .nav-menu .container .button-wrapper { margin-bottom: 60px; padding-right: 16px; }
+header .nav-wrapper .nav-menu .container .button-wrapper { position: relative; margin-bottom: 60px; padding-right: 16px; }
 
 @media (min-width: 768px) { header .nav-wrapper .nav-menu .container .button-wrapper { padding-right: 0; } }
 
@@ -439,13 +439,13 @@ header .nav-wrapper .nav-menu .container nav ul li { margin-bottom: 40px; }
 
 @media (min-width: 768px) { header .nav-wrapper .nav-menu .container nav ul li { margin-bottom: 50px; } }
 
-header .nav-wrapper .nav-menu .container nav ul li a { position: relative; padding-bottom: 12px; text-decoration: none; color: #000000; line-height: 1; text-transform: uppercase; }
+header .nav-wrapper .nav-menu .container nav ul li a { position: relative; padding-bottom: 12px; text-decoration: none; color: #000000; line-height: 1; text-transform: uppercase; font-size: 26px; font-family: "Tenor Sans", sans-serif; }
 
-@media (min-width: 375px) { header .nav-wrapper .nav-menu .container nav ul li a { font-size: 20px; padding-bottom: 18px; } }
+@media (min-width: 375px) { header .nav-wrapper .nav-menu .container nav ul li a { padding-bottom: 18px; } }
 
 @media (min-width: 768px) { header .nav-wrapper .nav-menu .container nav ul li a { font-size: 32px; } }
 
-@media (min-width: 1024px) { header .nav-wrapper .nav-menu .container nav ul li a { font-size: 42px; } }
+@media (min-width: 1024px) { header .nav-wrapper .nav-menu .container nav ul li a { font-family: "Open Sans", sans-serif; font-size: 42px; } }
 
 header .nav-wrapper .nav-menu .container nav ul li a:after { content: ""; position: absolute; left: 0; bottom: -2px; width: 100%; height: 2px; background-color: #E8ABAA; transform: translateX(200%); transition: 0.8s ease all; }
 
@@ -723,7 +723,7 @@ section.training .flex-7 { position: relative; margin-top: 80px; }
 
 .abstract-6 { position: relative; top: -90px; left: -30px; width: 60%; }
 
-@media (min-width: 768px) { .abstract-6 { position: absolute; top: -220px; bottom: 40px; } }
+@media (min-width: 768px) { .abstract-6 { position: absolute; top: 220px; bottom: 40px; } }
 
 @media (min-width: 1440px) { .abstract-6 { top: 260px; } }
 
@@ -805,13 +805,13 @@ section.inspiration .image-container { position: relative; width: 100%; }
 
 .about-4 { position: absolute; top: 40%; left: -25%; width: 80%; overflow: hidden; }
 
-@media (min-width: 1440px) { .about-4 { top: 60%; left: -50%; width: 70%; } }
+@media (min-width: 768px) { .about-4 { top: 60%; left: -50%; width: 70%; } }
 
 @media (min-width: 1440px) { .about-4 { left: -25%; bottom: -100px; } }
 
 .abstract-9 { top: 58%; right: 0; width: 70%; z-index: -1; overflow: hidden; position: absolute; transform: scaleX(-1); }
 
-@media (min-width: 1440px) { .abstract-9 { top: 78%; width: 100%; } }
+@media (min-width: 768px) { .abstract-9 { top: 78%; width: 100%; } }
 
 @media (min-width: 1440px) { .abstract-9 { bottom: -40px; } }
 

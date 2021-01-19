@@ -261,22 +261,22 @@ header {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        margin-top: 60px;
         padding: 50px 20px 0;
-
+        
         text-align: right;
-
+        
         @media (min-width: 375px) {
+          margin-top: 60px;
           padding: 0 20px;
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: $tablet) {
           padding-right: 80px;
           padding-left: 40px;
           margin-top: 80px;
         }
 
-        @media (min-width: 1024px) {
+        @media (min-width: $desktop-sm) {
           padding-left: 110px;
         }
 
@@ -286,10 +286,11 @@ header {
         }
 
         .button-wrapper {
+          position: relative;
           margin-bottom: 60px;
           padding-right: 16px;
 
-          @media (min-width: 768px) {
+          @media (min-width: $tablet) {
             padding-right: 0;
           }
 
@@ -367,16 +368,18 @@ header {
                 color: $black;
                 line-height: 1;
                 text-transform: uppercase;
+                font-size: 26px;
+                font-family: $sansHeader;
 
                 @media (min-width: 375px) {
-                  font-size: 20px;
                   padding-bottom: 18px;
                 }
-                @media (min-width: 768px) {
+                @media (min-width: $tablet) {
                   font-size: 32px;
                 }
 
-                @media (min-width: 1024px) {
+                @media (min-width: $desktop-sm) {
+                  font-family: $sansSerif;
                   font-size: 42px;
                 }
 
