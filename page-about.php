@@ -62,12 +62,8 @@ $cta = get_field('about_cta');
         <div class="row">
                 <div class="flex-7">
                     <img class="decor-3" src="<?php echo get_template_directory_uri(); ?>/assets/img/decor-3.png" alt=" " >
-                    <img class="style-svg about-2" src="<?php echo get_template_directory_uri(); ?>/assets/img/about-2.svg" alt="A profile photo of Amanda at twilight.">
-                    <!-- <img class="abstract-8-branch" scr="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-4-branch.png" alt=" "> -->
-                    <!-- <img class="abstract-4-branch" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-4-branch.png" alt=" "> -->
-                    
+                    <img class="style-svg about-2" src="<?php echo get_template_directory_uri(); ?>/assets/img/about-2.svg" alt="A profile photo of Amanda at twilight.">                    
                     <img class="style-svg abstract-8" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-8.svg" alt=" ">
-                    
                 </div>
                 <div class="flex-4 push-1">
                     <h2 class="sansHeader-lg normal">
@@ -162,7 +158,7 @@ $cta = get_field('about_cta');
                 <h2 class="sansHeader-lg normal">
                     <?php echo $cta['header']; ?>
                 </h2>
-                <a href="" class="button">Get in touch</a>
+                <a href="https://form.typeform.com/to/GQbnm2kU" class="button">Get in touch</a>
             </div>
             <img class="flower-shape" src="<?php echo get_template_directory_uri(); ?>/assets/img/branch-3-crop.png" alt=" ">
             <img class="style-svg cta-shape" src="<?php echo get_template_directory_uri(); ?>/assets/img/cta-shape.svg" alt=" ">

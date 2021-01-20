@@ -351,6 +351,10 @@ section.training {
     @media (min-width: $tablet) {
       flex-direction: column;
     }
+
+    @media (min-width: $tablet) {
+      flex-direction: row;
+    }
   }
 
   h2 {
@@ -381,6 +385,10 @@ section.training {
 
   @media (min-width: $tablet) {
     width: 100%;
+  }
+
+  @media (min-width: $desktop-sm) {
+    width: 80%;
   }
 
   @media (min-width: $desktop-lg) {
@@ -415,10 +423,13 @@ section.training {
   width: 100%;
   left: 0;
 
-  @media (min-width: $desktop-lg) {
-    // position: absolute;
+  @media (min-width: $desktop-sm) {
     right: 20px;
     top: 0px;
+  }
+  @media (min-width: $desktop-lg) {
+    right: 20px;
+    // top: 0px;
   }
 }
 
@@ -445,6 +456,10 @@ section.experience {
   width: 30%;
   top: 22%;
 
+  @media (min-width: $desktop-sm) {
+    top: 0;
+  }
+
   @media (min-width: $desktop-lg) {
     left: 120px;
     top: -120px;
@@ -466,8 +481,8 @@ section.experience {
   z-index: 10;
 
   @media (min-width: $desktop-lg) {
-    left: 30%;
-    bottom: -20%;
+    top: 65%;
+    right: 40px;
   }
 }
 
@@ -557,9 +572,10 @@ section.inspiration {
     padding-top: 0px;
   }
   @media (min-width: $desktop-lg) {
-    margin-bottom: 0px;
+    // margin-bottom: 0px;
     padding-top: 180px;
   }
+
   .container {
     padding-bottom: 0;
     margin-bottom: -80%;
@@ -617,6 +633,7 @@ section.inspiration {
   left: -25%;
   width: 80%;
   overflow: hidden;
+  z-index: 3;
 
   @media (min-width: $tablet) {
     top: 60%;
@@ -634,18 +651,24 @@ section.inspiration {
   top: 58%;
   right: 0;
   width: 70%;
-  z-index: -1;
+  // z-index: -1;
   overflow: hidden;
 
   position: absolute;
   transform: scaleX(-1);
+  z-index: 2;
 
   @media (min-width: $tablet) {
     top: 78%;
     width: 100%;
   }
 
+  @media (min-width: $desktop-sm) {
+    top: 88%;
+  }
   @media (min-width: $desktop-lg) {
+    right: -160px;
+    top: inherit;
     bottom: -40px;
   }
 }
@@ -661,9 +684,9 @@ section.inspiration {
     bottom: -620px;
   }
   @media (min-width: $desktop-lg) {
-    position: absolute;
+    position: relative;
     width: 25%;
-    bottom: -150px;
+    // bottom: -150px;
   }
 }
 
@@ -676,7 +699,6 @@ section.about-cta {
   @media (min-width: $tablet) {
     background-size: cover;
     width: 100%;
-    // padding-top: 59.43%;
 
     &:before {
       display: block;
@@ -745,6 +767,9 @@ section.about-cta {
 
     @media (min-width: $tablet) {
       top: 50%;
+    }
+    @media (min-width: $desktop-lg) {
+      width: 80%;
     }
   }
 

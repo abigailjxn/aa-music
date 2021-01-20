@@ -705,6 +705,8 @@ section.training { background: #E8ABAA; margin-top: -0.3em; }
 
 @media (min-width: 768px) { section.training .row { flex-direction: column; } }
 
+@media (min-width: 768px) { section.training .row { flex-direction: row; } }
+
 section.training h2 { margin-bottom: 40px; }
 
 @media (min-width: 1440px) { section.training h2 { margin-bottom: 60px; } }
@@ -719,6 +721,8 @@ section.training .flex-7 { position: relative; margin-top: 80px; }
 
 @media (min-width: 768px) { .birds-4 { width: 100%; } }
 
+@media (min-width: 1024px) { .birds-4 { width: 80%; } }
+
 @media (min-width: 1440px) { .birds-4 { position: absolute; width: 600px; right: -20px; top: 50%; transform: translateY(10%); } }
 
 .abstract-6 { position: relative; top: -90px; left: -30px; width: 60%; }
@@ -729,7 +733,9 @@ section.training .flex-7 { position: relative; margin-top: 80px; }
 
 .abstract-7 { position: absolute; top: -100px; width: 100%; left: 0; }
 
-@media (min-width: 1440px) { .abstract-7 { right: 20px; top: 0px; } }
+@media (min-width: 1024px) { .abstract-7 { right: 20px; top: 0px; } }
+
+@media (min-width: 1440px) { .abstract-7 { right: 20px; } }
 
 section.experience { background: #ffffff; align-items: center; }
 
@@ -741,13 +747,15 @@ section.experience .flex-7 { position: relative; }
 
 .decor-3 { position: absolute; z-index: 0; width: 30%; top: 22%; }
 
+@media (min-width: 1024px) { .decor-3 { top: 0; } }
+
 @media (min-width: 1440px) { .decor-3 { left: 120px; top: -120px; } }
 
 .about-2 { position: relative; z-index: 1; width: 100%; }
 
 .abstract-8 { position: absolute; width: 30%; bottom: 50px; left: initial; right: 30px; z-index: 10; }
 
-@media (min-width: 1440px) { .abstract-8 { left: 30%; bottom: -20%; } }
+@media (min-width: 1440px) { .abstract-8 { top: 65%; right: 40px; } }
 
 section.collab { background: #ffffff; }
 
@@ -779,7 +787,7 @@ section.collab h2:after { position: relative; content: " "; width: 120px; height
 
 @media (min-width: 768px) { section.inspiration { margin-bottom: 400px; padding-top: 0px; } }
 
-@media (min-width: 1440px) { section.inspiration { margin-bottom: 0px; padding-top: 180px; } }
+@media (min-width: 1440px) { section.inspiration { padding-top: 180px; } }
 
 section.inspiration .container { padding-bottom: 0; margin-bottom: -80%; }
 
@@ -803,23 +811,25 @@ section.inspiration .image-container { position: relative; width: 100%; }
 
 @media (min-width: 1440px) { .about-3 { right: -80px; } }
 
-.about-4 { position: absolute; top: 40%; left: -25%; width: 80%; overflow: hidden; }
+.about-4 { position: absolute; top: 40%; left: -25%; width: 80%; overflow: hidden; z-index: 3; }
 
 @media (min-width: 768px) { .about-4 { top: 60%; left: -50%; width: 70%; } }
 
 @media (min-width: 1440px) { .about-4 { left: -25%; bottom: -100px; } }
 
-.abstract-9 { top: 58%; right: 0; width: 70%; z-index: -1; overflow: hidden; position: absolute; transform: scaleX(-1); }
+.abstract-9 { top: 58%; right: 0; width: 70%; overflow: hidden; position: absolute; transform: scaleX(-1); z-index: 2; }
 
 @media (min-width: 768px) { .abstract-9 { top: 78%; width: 100%; } }
 
-@media (min-width: 1440px) { .abstract-9 { bottom: -40px; } }
+@media (min-width: 1024px) { .abstract-9 { top: 88%; } }
+
+@media (min-width: 1440px) { .abstract-9 { right: -160px; top: inherit; bottom: -40px; } }
 
 .branch-4 { width: 50%; bottom: -50px; position: relative; z-index: 10; }
 
 @media (min-width: 768px) { .branch-4 { width: 40%; bottom: -620px; } }
 
-@media (min-width: 1440px) { .branch-4 { position: absolute; width: 25%; bottom: -150px; } }
+@media (min-width: 1440px) { .branch-4 { position: relative; width: 25%; } }
 
 section.about-cta { display: flex; align-items: center; justify-content: center; padding: 150px 0 200px; }
 
@@ -843,6 +853,8 @@ section.about-cta .text a { color: white; font-size: small; background: black; b
 section.about-cta .flower-shape { background: #7E559B; -webkit-clip-path: url(#cta-shape); clip-path: url(#cta-shape); width: 100%; height: auto; position: absolute; top: 40%; transform: translate(-50%, -50%); left: 50%; }
 
 @media (min-width: 768px) { section.about-cta .flower-shape { top: 50%; } }
+
+@media (min-width: 1440px) { section.about-cta .flower-shape { width: 80%; } }
 
 section.about-cta .cta-shape { width: 0; }
 
