@@ -22,6 +22,8 @@ const settings = {
   jsFiles: [
     "../assets/js/lib/modernizr.js",
     "../assets/js/lib/anime.js",
+    "../assets/js/lib/animation.gsap.min.js",
+    "../assets/js/lib/ScrollMagic.min.js",
     "../assets/js/site.js",
   ],
 };

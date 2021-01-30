@@ -709,7 +709,7 @@ section.training { background: #E8ABAA; margin-top: -0.3em; }
 
 @media (min-width: 768px) { section.training .row { flex-direction: column; } }
 
-@media (min-width: 768px) { section.training .row { flex-direction: row; } }
+@media (min-width: 1024px) { section.training .row { flex-direction: row; } }
 
 section.training h2 { margin-bottom: 40px; }
 
@@ -743,11 +743,19 @@ section.training .flex-7 { position: relative; margin-top: 80px; }
 
 section.experience { background: #ffffff; align-items: center; }
 
-section.experience .row { flex-direction: column-reverse; }
+section.experience .row { flex-direction: column-reverse; align-items: center; }
 
-@media (min-width: 768px) { section.experience .row { flex-direction: row; } }
+@media (min-width: 1024px) { section.experience .row { flex-direction: row; } }
 
 section.experience .flex-7 { position: relative; }
+
+@media (min-width: 768px) { section.experience .flex-7 { margin-top: 40px; } }
+
+@media (min-width: 1024px) { section.experience .flex-7 { margin-top: 0px; } }
+
+@media (min-width: 768px) { section.experience .push-1 { left: 0; } }
+
+@media (min-width: 1024px) { section.experience .push-1 { left: 8.33333333333%; } }
 
 .decor-3 { position: absolute; z-index: 0; width: 30%; top: 22%; }
 
@@ -788,6 +796,8 @@ section.collab h2:after { position: relative; content: " "; width: 120px; height
 @media (min-width: 768px) { .branch-3 { width: 40%; bottom: -80px; } }
 
 @media (min-width: 1440px) { .branch-3 { bottom: -100px; } }
+
+@media (min-width: 1600px) { .branch-3 { width: 30%; } }
 
 @media (min-width: 768px) { section.inspiration { margin-bottom: 400px; padding-top: 0px; } }
 

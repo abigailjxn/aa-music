@@ -360,7 +360,7 @@ section.training {
       flex-direction: column;
     }
 
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop-sm) {
       flex-direction: row;
     }
   }
@@ -447,14 +447,31 @@ section.experience {
 
   .row {
     flex-direction: column-reverse;
+    align-items: center;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop-sm) {
       flex-direction: row;
     }
   }
 
   .flex-7 {
     position: relative;
+    @media (min-width: $tablet) {
+      margin-top: 40px;
+    }
+    @media (min-width: $desktop-sm) {
+      margin-top: 0px;
+    }
+  }
+
+  .push-1{
+    @media (min-width: $tablet) {
+      left: 0;
+    }
+    @media (min-width: $desktop-sm) {
+      left: 8.33333333333%;
+    }
+
   }
 }
 
@@ -569,8 +586,10 @@ section.collab {
     bottom: -80px;
   }
   @media (min-width: $desktop-lg) {
-    // width: 40%;
     bottom: -100px;
+  }
+  @media (min-width: 1600px) {
+    width: 30%;
   }
 }
 
