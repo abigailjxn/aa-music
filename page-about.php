@@ -30,7 +30,7 @@ $cta = get_field('about_cta');
 <section class="hero-about">
     <div class="container">
         <div class="row">
-            <div class="flex-4 push-1">
+            <div class="flex-4 push-1 animate">
                 <h1 class="sansHeader-xl uppercase normal"><?php the_title();?><span>Amanda</span></h1>
                 <p><?php the_content();?></p>
             </div>
@@ -42,7 +42,7 @@ $cta = get_field('about_cta');
 <section class="training">
     <div class="container">
         <div class="row">
-            <div class="flex-4">
+            <div class="flex-4 animate">
                 <h2 class="sansHeader-lg normal">
                     <?php echo $training['header']; ?>
                 </h2>
@@ -65,7 +65,7 @@ $cta = get_field('about_cta');
                     <img class="style-svg about-2" src="<?php echo get_template_directory_uri(); ?>/assets/img/about-2.svg" alt="A profile photo of Amanda at twilight.">                    
                     <img class="style-svg abstract-8" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-8.svg" alt=" ">
                 </div>
-                <div class="flex-4 push-1">
+                <div class="flex-4 push-1 animate">
                     <h2 class="sansHeader-lg normal">
                         <?php echo $experience['header']; ?>
                     </h2>
@@ -79,7 +79,7 @@ $cta = get_field('about_cta');
     <div class="container">
         <div class="row">
             <h2 class="sansHeader-lg normal text-center"><?php echo $experience['logo_header']; ?></h2>
-            <ul class="logo-list">
+            <ul class="logo-list animate">
                 <?php if ($experience['logo_1']): ?>
                 <li class="logo">
                     <img src="<?php echo esc_url($experience['logo_1']['url']); ?>" alt="<?php echo esc_attr($experience['logo_1']['alt']); ?>">
@@ -134,7 +134,7 @@ $cta = get_field('about_cta');
 <section class="inspiration">
     <div class="container">
         <div class="row">
-            <div class="flex-4">
+            <div class="flex-4 animate">
                 <h2 class="sansHeader-lg normal">
                     <?php echo $inspiration['header']; ?>
                 </h2>
@@ -154,7 +154,7 @@ $cta = get_field('about_cta');
 <section class="about-cta" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/mural.jpg');" aria-label="">
     <div class="container">
         <div class="row">
-            <div class="text">
+            <div class="text animate">
                 <h2 class="sansHeader-lg normal">
                     <?php echo $cta['header']; ?>
                 </h2>

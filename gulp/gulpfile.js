@@ -22,8 +22,11 @@ const settings = {
   jsFiles: [
     "../assets/js/lib/modernizr.js",
     "../assets/js/lib/anime.js",
-    "../assets/js/lib/animation.gsap.min.js",
+    // "../assets/js/lib/jquery.3.5.1.min.js",
     "../assets/js/lib/ScrollMagic.min.js",
+    "../assets/js/lib/jquery.ScrollMagic.min.js",
+    "../assets/js/lib/animation.gsap.min.js",
+    "../assets/js/lib/debug.addIndicators.min.js",
     "../assets/js/site.js",
   ],
 };

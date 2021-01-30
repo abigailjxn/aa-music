@@ -1,3 +1,5 @@
+// Project Scripts
+
 $(document).ready(function () {
   // Header Menu
   const hamburgerElem = $(".hamburger");
@@ -44,7 +46,6 @@ $(document).ready(function () {
     $(this).toggleClass("hovering");
   });
 });
-
 
 // SVG Paths and blob looping animations
 
@@ -94,20 +95,36 @@ window.onload = function () {
   morphing(blobArr);
 };
 
-
 // A11y Add click event to turn off animation
 
 // add CSS check for 'prefers-reduced-motion' ??
 
 // Wrap anime() in var
-  // const animation = anime( blah blah blah);
+// const animation = anime( blah blah blah);
 
 // click event to reduce motion button
 //   button.addEventListener("click", () => {
 //   button.classList.toggle("animating"); }
 
 // Play or pause based on click event
-  // if animating 
-        // animation.play();
-  // if !aninating
-      // animation.pause();
+// if animating
+// animation.play();
+// if !animating
+// animation.pause();
+
+// Reveal on scroll
+const controller = new ScrollMagic.Controller();
+// build scenes
+const animateEl = document.getElementsByClassName("animate");
+for (let i = 0; i < animateEl.length; i++) {
+  // create a scene for each element
+  new ScrollMagic.Scene({
+    triggerElement: animateEl[i], // y value not modified, so we can use element as trigger as well
+    // offset: 50,												 // start a little later
+    triggerHook: 0.9,
+    reverse: false, // only do once
+  })
+    .setClassToggle(animateEl[i], "triggered") // add class toggle
+    .addIndicators({ name: "animate " + (i + 1) }) // add indicators (requires plugin)
+    .addTo(controller);
+}

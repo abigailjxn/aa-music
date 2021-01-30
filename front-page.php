@@ -12,7 +12,7 @@
 <section class="hero">
     <div class="container">
         <div class="row">
-            <div class="flex-6">
+            <div class="flex-6 animate">
                 <h1 class="sansHeader-xl uppercase normal text-center"><?php the_title();?></h1>
                 <p class="sansHeader-lg text-center"><?php the_field('subtitle');?></p>
             </div>
@@ -35,7 +35,7 @@
         </div>
         <div class="row">
             <div class="flex-4">
-                <article class="feature-1">
+                <article class="feature-1 animate">
                     <img src="<?php echo $featured_work['featured_1_image']['url']?>" alt="<?php echo $featured_work['featured_1_image']['alt']?>">
                     <div class="content">
                         <h3 class="project-title sansHeader-med normal"><?php echo $featured_work['featured_1_title']?></h3>
@@ -45,7 +45,7 @@
                 </article>
             </div>
             <div class="flex-4">
-                <article class="feature-2">
+                <article class="feature-2 animate">
                     <img src="<?php echo $featured_work['featured_2_image']['url']?>" alt="<?php echo $featured_work['featured_2_image']['alt']?>">
                     <div class="content">
                         <h3 class="project-title sansHeader-med normal"><?php echo $featured_work['featured_2_title']?></h3>
@@ -55,7 +55,7 @@
                 </article>
             </div>
             <div class="flex-4">
-                <article class="feature-3">
+                <article class="feature-3 animate">
                     <img src="<?php echo $featured_work['featured_3_image']['url']?>" alt="<?php echo $featured_work['featured_3_image']['alt']?>">
                     <div class="content">
                         <h3 class="project-title sansHeader-med normal"><?php echo $featured_work['featured_3_title']?></h3>
@@ -72,7 +72,7 @@
     <div class="container">
         <div class="row">
             <div class="flex-4 push-1">
-                <div class="contact-form">
+                <div class="contact-form animate">
                     <h2 class="sansHeader-lg normal"><?php echo $contact['form_header']?></h2>
                     <p>To get started, fill out this quick form</p>
                     <?php the_field('typeform_embed_code'); ?>
@@ -80,7 +80,7 @@
             </div>
             <div class="divider"></div>
             <div class="flex-5 push-2">
-                <div class="music-cta flex-center text-center">
+                <div class="music-cta flex-center text-center animate">
                     <h2 class="sansHeader-lg normal"><?php echo $contact['link_header']?></h2>
                     <a href="<?php echo $contact['link']['url']?>" class="button uppercase"><?php echo $contact['link']['title']?></a>
                 </div>

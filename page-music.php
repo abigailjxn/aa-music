@@ -92,7 +92,7 @@ get_header();
 <section class="music-cta">
     <div class="container">
         <div class="row">
-            <div class="flex-4 center">
+            <div class="flex-4 center animate">
                 <h2 class="sansHeader-lg normal">Like what you hear?</h2>
                 <h3 class="sansHeader-med normal">Contact Amanda</h3>
                 <?php the_field('typeform_embed_code'); ?>

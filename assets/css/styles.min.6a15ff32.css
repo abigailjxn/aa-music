@@ -291,6 +291,10 @@ body { background-color: #fff; position: relative; float: left; width: 100%; hei
 
 .scrolled { position: fixed !important; top: 0; }
 
+.animate { opacity: 0; transform: translateY(40px); transition: ease all 0.8s; }
+
+.animate.triggered { opacity: 1; transform: translateY(0); }
+
 ::-moz-selection { background: rgba(0, 0, 0, 0.2); }
 
 ::selection { background: rgba(0, 0, 0, 0.2); }
