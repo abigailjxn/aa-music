@@ -158,7 +158,7 @@ $cta = get_field('about_cta');
                 <h2 class="sansHeader-lg normal">
                     <?php echo $cta['header']; ?>
                 </h2>
-                <a href="https://form.typeform.com/to/GQbnm2kU" class="button">Get in touch</a>
+                <a href="<?php echo $cta['link']['url']; ?>" class="button"><?php echo $cta['link']['title']; ?></a>
             </div>
             <img class="flower-shape" src="<?php echo get_template_directory_uri(); ?>/assets/img/branch-3-crop.png" alt=" ">
             <img class="style-svg cta-shape" src="<?php echo get_template_directory_uri(); ?>/assets/img/cta-shape.svg" alt=" ">

@@ -1,7 +1,18 @@
 <?php
 
 get_header();
-// $contact = get_field('contact');
+$vimeo = get_field('vimeo_section');
+$vimeo_shortcode = $vimeo['video_gallery_shortcode'];
+
+// Using set variables to avoid getting ACF Pro for repreater
+$accordion_1 = get_field('accordion_1');
+$accordion_2 = get_field('accordion_2');
+$accordion_3 = get_field('accordion_3');
+$accordion_4 = get_field('accordion_4');
+$accordion_5 = get_field('accordion_5');
+$accordion_6 = get_field('accordion_6');
+
+$contact = get_field('contact');
 
 
 ?>
@@ -26,61 +37,68 @@ get_header();
     <div class="container">
         <div class="accordion">
     
+            <?php if ($vimeo['title'] && $vimeo_shortcode) : ?>
             <button id="accordion-open-1" class="accordion__button expanded" aria-expanded="true">
-                Commercial
+                <?php echo $vimeo['title'] ?>
             </button>
             <div class="commercial accordion__section open" id="accordion-section-1" aria-hidden="false">
-                <?php echo do_shortcode("[origincode_videogallery id='1']"); ?>
+                <?php echo do_shortcode($vimeo_shortcode); ?>
             </div>
+            <?php endif; ?>
 
+            <?php if ($accordion_1['title'] && $accordion_1['embed_code']) : ?>
             <button id="accordion-open-2" class="accordion__button" aria-expanded="false">
-                Featured
+                <?php echo $accordion_1['title']; ?>
             </button>
-            <div class="featured accordion__section" id="accordion-section-2" aria-hidden="true">
-                <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/484118874&color=%237e559b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/aaugust30" title="Amanda August" target="_blank" style="color: #cccccc; text-decoration: none;">Amanda August</a> · <a href="https://soundcloud.com/aaugust30/sets/featured" title="Featured" target="_blank" style="color: #cccccc; text-decoration: none;">Featured</a></div>
+            <div class="accordion__section" id="accordion-section-2" aria-hidden="true">
+                <?php echo $accordion_1['embed_code']; ?>
             </div>
+            <? endif; ?>
 
+            <?php if ($accordion_2['title'] && $accordion_2['embed_code']) : ?>
             <button id="accordion-open-3" class="accordion__button" aria-expanded="false">
-                Film Score
+                <?php echo $accordion_2['title']; ?>
             </button>
-            <div class="rc-film-score accordion__section" id="accordion-section-3" aria-hidden="true">
-                <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/500794356&color=%237e559b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/aaugust30" title="Amanda August" target="_blank" style="color: #cccccc; text-decoration: none;">Amanda August</a> · <a href="https://soundcloud.com/aaugust30/sets/revolt-of-color-original-score" title="Revolt of Color Original Score" target="_blank" style="color: #cccccc; text-decoration: none;">Revolt of Color Original Score</a></div>
+            <div class="accordion__section" id="accordion-section-3" aria-hidden="true">
+                <?php echo $accordion_2['embed_code']; ?>
             </div>
-            
+            <?php endif; ?>
+
+            <?php if ($accordion_3['title'] && $accordion_3['embed_code']) : ?>
             <button id="accordion-open-4" class="accordion__button" aria-expanded="false">
-                Urban
+                <?php echo $accordion_3['title']; ?>
             </button>
-            <div class="urban accordion__section" id="accordion-section-4" aria-hidden="true">
-                <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/484097502&color=%237e559b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/aaugust30" title="Amanda August" target="_blank" style="color: #cccccc; text-decoration: none;">Amanda August</a> · <a href="https://soundcloud.com/aaugust30/sets/urban" title="Urban" target="_blank" style="color: #cccccc; text-decoration: none;">Urban</a></div>
+            <div class="accordion__section" id="accordion-section-4" aria-hidden="true">
+                <?php echo $accordion_3['embed_code']; ?>
             </div>
+            <? endif; ?>
 
+            <?php if ($accordion_4['title'] && $accordion_4['embed_code']) : ?>
             <button id="accordion-open-5" class="accordion__button" aria-expanded="false">
-                Electronic
+                <?php echo $accordion_4['title']; ?>
             </button>
-            <div class="electronic accordion__section" id="accordion-section-5" aria-hidden="true">
-                <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/484093908&color=%237e559b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/aaugust30" title="Amanda August" target="_blank" style="color: #cccccc; text-decoration: none;">Amanda August</a> · <a href="https://soundcloud.com/aaugust30/sets/electronic" title="Electronic" target="_blank" style="color: #cccccc; text-decoration: none;">Electronic</a></div>
+            <div class="accordion__section" id="accordion-section-5" aria-hidden="true">
+                <?php echo $accordion_4['embed_code']; ?>
             </div>
+            <? endif; ?>
 
+            <?php if ($accordion_5['title'] && $accordion_5['embed_code']) : ?>
             <button id="accordion-open-6" class="accordion__button" aria-expanded="false">
-                Cinematic
+                <?php echo $accordion_5['title']; ?>
             </button>
-            <div class="cinematic accordion__section" id="accordion-section-6" aria-hidden="true">
-                <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/484052205&color=%237e559b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/aaugust30" title="Amanda August" target="_blank" style="color: #cccccc; text-decoration: none;">Amanda August</a> · <a href="https://soundcloud.com/aaugust30/sets/orchestral" title="Cinematic" target="_blank" style="color: #cccccc; text-decoration: none;">Cinematic</a></div>
+            <div class="accordion__section" id="accordion-section-6" aria-hidden="true">
+                <?php echo $accordion_5['embed_code']; ?>
             </div>
+            <?php endif; ?>
 
+            <?php if ($accordion_6['title'] && $accordion_6['embed_code']) : ?>
             <button id="accordion-open-7" class="accordion__button" aria-expanded="false">
-                Minimal
+                <?php echo $accordion_6['title']; ?>
             </button>
             <div class="minimal accordion__section" id="accordion-section-7" aria-hidden="true">
-                <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/484036623&color=%237e559b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/aaugust30" title="Amanda August" target="_blank" style="color: #cccccc; text-decoration: none;">Amanda August</a> · <a href="https://soundcloud.com/aaugust30/sets/minimalindie-scoring" title="Minimal" target="_blank" style="color: #cccccc; text-decoration: none;">Minimal</a></div>
+                <?php echo $accordion_6['embed_code']; ?>
             </div>
-
-            <button id="accordion-open-8" class="accordion__button" aria-expanded="false">
-                Acoustic Pop
-            </button>
-            <div class="acoustic-pop accordion__section" id="accordion-section-8" aria-hidden="true">
-                <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/484029006&color=%237e559b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/aaugust30" title="Amanda August" target="_blank" style="color: #cccccc; text-decoration: none;">Amanda August</a> · <a href="https://soundcloud.com/aaugust30/sets/acousticpop" title="Acoustic &amp; Pop" target="_blank" style="color: #cccccc; text-decoration: none;">Acoustic &amp; Pop</a></div>
-            </div>
+            <? endif; ?>
         
         </div>
         
@@ -93,8 +111,8 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="flex-4 center animate">
-                <h2 class="sansHeader-lg normal">Like what you hear?</h2>
-                <h3 class="sansHeader-med normal">Contact Amanda</h3>
+                <h2 class="sansHeader-lg normal"><?php echo $contact['header']; ?></h2>
+                <h3 class="sansHeader-med normal"><?php echo $contact['subheader']; ?></h3>
                 <?php the_field('typeform_embed_code'); ?>
             </div>
         </div>
