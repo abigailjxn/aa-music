@@ -761,7 +761,7 @@ section.experience .flex-7 { position: relative; }
 
 .decor-3 { position: absolute; z-index: 0; width: 30%; top: 22%; }
 
-@media (min-width: 1024px) { .decor-3 { top: 0; } }
+@media (min-width: 768px) { .decor-3 { top: 0; } }
 
 @media (min-width: 1440px) { .decor-3 { left: 120px; top: -120px; } }
 
@@ -801,13 +801,13 @@ section.collab h2:after { position: relative; content: " "; width: 120px; height
 
 @media (min-width: 1600px) { .branch-3 { width: 30%; } }
 
-@media (min-width: 768px) { section.inspiration { margin-bottom: 400px; padding-top: 0px; } }
+@media (min-width: 768px) { section.inspiration { padding-top: 0px; } }
 
 @media (min-width: 1440px) { section.inspiration { padding-top: 180px; } }
 
-section.inspiration .container { padding-bottom: 0; margin-bottom: -80%; }
+section.inspiration .container { padding-bottom: 0; margin-bottom: 50%; }
 
-@media (min-width: 1440px) { section.inspiration .container { padding-bottom: 35%; } }
+@media (min-width: 768px) { section.inspiration .container { margin-bottom: 0; } }
 
 section.inspiration .row { position: relative; }
 
@@ -817,46 +817,52 @@ section.inspiration .row .flex-4 { margin-top: 20%; }
 
 section.inspiration .image-container { position: relative; width: 100%; }
 
-@media (min-width: 768px) { section.inspiration .image-container { width: 48%; } }
+@media (min-width: 768px) { section.inspiration .image-container { margin-top: 20%; width: 48%; } }
+
+@media (min-width: 1440px) { section.inspiration .image-container { margin-top: 0; width: 60%; } }
 
 @media (min-width: 1440px) { section.inspiration .image-container { width: 60%; } }
 
-.about-3 { position: relative; right: 0; width: 140%; top: -160px; left: -20%; overflow: hidden; }
+.about-3 { position: relative; right: 0; width: 140%; top: 50px; left: -20%; overflow: hidden; }
 
-@media (min-width: 768px) { .about-3 { top: 0; } }
+@media (min-width: 1440px) { .about-3 { right: initial; width: 80%; left: 0; } }
 
-@media (min-width: 1440px) { .about-3 { right: -80px; } }
+.about-4 { position: absolute; top: 50%; right: -25%; width: 80%; overflow: hidden; z-index: 3; }
 
-.about-4 { position: absolute; top: 40%; left: -25%; width: 80%; overflow: hidden; z-index: 3; }
-
-@media (min-width: 768px) { .about-4 { top: 60%; left: -50%; width: 70%; } }
+@media (min-width: 768px) { .about-4 { top: 80%; left: -40%; width: 70%; } }
 
 @media (min-width: 1440px) { .about-4 { left: -25%; bottom: -100px; } }
 
-.abstract-9 { top: 58%; right: 0; width: 70%; overflow: hidden; position: absolute; transform: scaleX(-1); z-index: 2; }
+.abstract-9 { top: 100%; left: 0; width: 70%; overflow: hidden; position: absolute; transform: scaleX(-1); z-index: 2; }
 
-@media (min-width: 768px) { .abstract-9 { top: 78%; width: 100%; } }
+@media (min-width: 768px) { .abstract-9 { top: 100%; left: 10%; width: 100%; } }
 
-@media (min-width: 1024px) { .abstract-9 { top: 88%; } }
+@media (min-width: 1024px) { .abstract-9 { width: 70%; top: 88%; } }
 
-@media (min-width: 1440px) { .abstract-9 { right: -160px; top: inherit; bottom: -40px; } }
+@media (min-width: 1440px) { .abstract-9 { right: 0px; top: inherit; left: initial; bottom: -120px; } }
 
 .branch-4 { width: 50%; bottom: -50px; position: relative; z-index: 10; }
 
-@media (min-width: 768px) { .branch-4 { width: 40%; bottom: -620px; } }
+@media (min-width: 768px) { .branch-4 { width: 40%; bottom: -100px; } }
 
-@media (min-width: 1440px) { .branch-4 { position: relative; width: 25%; } }
+@media (min-width: 1024px) { .branch-4 { width: 30%; bottom: -180px; } }
+
+@media (min-width: 1440px) { .branch-4 { width: 25%; } }
 
 section.about-cta { display: flex; align-items: center; justify-content: center; padding: 150px 0 200px; }
 
 @media (min-width: 768px) { section.about-cta { background-size: cover; width: 100%; }
   section.about-cta:before { display: block; content: ""; width: 100%; padding-top: 72.5%; } }
 
+@media (min-width: 1024px) { section.about-cta { padding: 0; } }
+
 @media (min-width: 768px) { section.about-cta .container { left: -50%; transform: translateX(50%); width: 600%; margin-top: 20%; } }
+
+@media (min-width: 1440px) { section.about-cta .container { margin: auto; } }
 
 section.about-cta .row { justify-content: center; }
 
-section.about-cta .text { position: absolute; width: 80%; top: 25%; left: 50%; transform: translate(-50%); z-index: 100; color: white; text-align: center; }
+section.about-cta .text { position: relative; width: 80%; top: 25%; margin: auto; z-index: 100; color: white; text-align: center; }
 
 section.about-cta .text h2 { font-size: 28px; }
 
