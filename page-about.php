@@ -1,6 +1,7 @@
 <?php
 
 get_header();
+$about_hero = get_field('about_hero');
 $training = get_field('training');
 $experience = get_field('experience');
 $inspiration = get_field('inspiration');
@@ -36,7 +37,7 @@ $cta = get_field('about_cta');
             </div>
         </div>
     </div>
-    <img class="style-svg about-hero" src="<?php echo get_template_directory_uri(); ?>/assets/img/about-1.svg" alt=" ">
+    <img class="about-hero" src="<?php echo $about_hero['url'] ?>" alt="<?php echo $about_hero['alt'] ?>">
 </section>
 
 <section class="training">
@@ -49,8 +50,8 @@ $cta = get_field('about_cta');
                 <?php echo $training['content']; ?>
             </div>
             <div class="flex-7 push-1">
-                <img class="birds-4" src="<?php echo get_template_directory_uri(); ?>/assets/img/birds-4.png" alt=" ">
-                <img class="style-svg abstract-6" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-6.svg" alt=" ">
+                <img class="birds-4" src="<?php echo $training['feature_image']['url']; ?>" alt="<?php echo $training['feature_image']['alt']; ?>">
+                <img class="abstract-6" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-6.png" alt=" ">
                 <img class="style-svg abstract-7" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-7.svg" alt=" ">
             </div>
         </div>
@@ -62,7 +63,8 @@ $cta = get_field('about_cta');
         <div class="row">
                 <div class="flex-7">
                     <img class="decor-3" src="<?php echo get_template_directory_uri(); ?>/assets/img/decor-3.png" alt=" " >
-                    <img class="style-svg about-2" src="<?php echo get_template_directory_uri(); ?>/assets/img/about-2.svg" alt="A profile photo of Amanda at twilight.">                    
+                    <!-- add svg animation here?  -->
+                    <img class="style-svg about-2" src="<?php echo $experience['feature_image']['url']; ?>" alt="<?php echo $experience['feature_image']['alt']; ?>">                    
                     <img class="style-svg abstract-8" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-8.svg" alt=" ">
                 </div>
                 <div class="flex-4 push-1 animate">
@@ -141,9 +143,10 @@ $cta = get_field('about_cta');
                 <?php echo $inspiration['content']; ?>
             </div>
             <div class="image-container">
-                <img class="style-svg about-3" src="<?php echo get_template_directory_uri(); ?>/assets/img/about-3.svg" alt=" ">
-                <img class="style-svg about-4" src="<?php echo get_template_directory_uri(); ?>/assets/img/about-4.svg" alt=" ">
-                <img class="style-svg abstract-9" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-6.svg" alt=" ">
+                <img class="about-3" src="<?php echo $inspiration['feature_image_1']['url']; ?>" alt="<?php echo $inspiration['feature_image_1']['alt']; ?>">
+                <!-- add svg animatino here?  -->
+                <img class="style-svg about-4" src="<?php echo $inspiration['feature_image_2']['url']; ?>" alt="<?php echo $inspiration['feature_image_2']['alt']; ?>">
+                <img class="abstract-9" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-6.png" alt=" ">
             </div>
 
         </div>
@@ -151,7 +154,7 @@ $cta = get_field('about_cta');
     <img class="branch-4" src="<?php echo get_template_directory_uri(); ?>/assets/img/branch-4.png" alt=" ">
 </section>
 
-<section class="about-cta" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/mural.jpg');" aria-label="">
+<section class="about-cta" style="background-image: url('<?php echo $cta['background_image']['url']; ?>');" aria-label="<?php echo $cta['background_image']['alt']; ?>">
     <div class="container">
         <div class="row">
             <div class="text animate">
@@ -160,8 +163,7 @@ $cta = get_field('about_cta');
                 </h2>
                 <a href="<?php echo $cta['link']['url']; ?>" class="button"><?php echo $cta['link']['title']; ?></a>
             </div>
-            <img class="flower-shape" src="<?php echo get_template_directory_uri(); ?>/assets/img/branch-3-crop.png" alt=" ">
-            <img class="style-svg cta-shape" src="<?php echo get_template_directory_uri(); ?>/assets/img/cta-shape.svg" alt=" ">
+            <img class="cta-shape" src="<?php echo get_template_directory_uri(); ?>/assets/img/cta-shape.png" alt=" ">
         </div>
     </div>
 </section>

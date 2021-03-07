@@ -18,13 +18,13 @@
             </div>
             <div class="flex-6">
                 <div class="morph-container">
-                    <img class="style-svg" src="<?php echo $profile['url'];?>" alt="<?php echo $profile['alt'];?>">
+                    <img class="" src="<?php echo $profile['url'];?>" alt="<?php echo $profile['alt'];?>">
                 </div>
             </div>
         </div>
     </div>
     <img class="style-svg abstract-1" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-1.svg" alt=" ">
-    <img class="style-svg abstract-2" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-2.svg" alt=" ">
+    <img class="abstract-2" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-2.png" alt=" ">
     <img class="branch-1" src="<?php echo get_template_directory_uri(); ?>/assets/img/branch-1.png" alt=" ">
 </section>
 
@@ -74,7 +74,9 @@
             <div class="flex-4 push-1">
                 <div class="contact-form animate">
                     <h2 class="sansHeader-lg normal"><?php echo $contact['form_header']?></h2>
-                    <p>To get started, fill out this quick form</p>
+                    <?php if ($contact['helper_text']) : ?>
+                        <p><?php echo $contact['helper_text']?></p>
+                    <?php endif; ?>
                     <?php the_field('typeform_embed_code'); ?>
                 </div>
             </div>

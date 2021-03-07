@@ -331,8 +331,6 @@ section.hero-about {
 
 .about-hero {
   position: relative;
-  left: -45%;
-  width: 145%;
   overflow-x: hidden;
   bottom: 0;
 
@@ -782,9 +780,9 @@ section.about-cta {
     }
   }
 
-  .flower-shape {
-    background: $brand2;
-    clip-path: url("#cta-shape");
+  .cta-shape {
+    // background: $brand2;
+    // clip-path: url("#cta-shape");
     width: 100%;
     height: auto;
     position: absolute;
@@ -800,9 +798,6 @@ section.about-cta {
     }
   }
 
-  .cta-shape {
-    width: 0;
-  }
 }
 
 // 404 Page
