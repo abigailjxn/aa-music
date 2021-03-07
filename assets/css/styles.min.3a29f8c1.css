@@ -703,9 +703,7 @@ section.hero-about h1 span { margin-left: 1em; }
 
 @media (min-width: 1440px) { section.hero-about h1 { top: 220px; } }
 
-.about-hero { position: relative; overflow-x: hidden; bottom: 0; }
-
-@media (min-width: 1440px) { .about-hero { width: 100%; left: 0; } }
+.about-hero { position: relative; overflow-x: hidden; bottom: 0; left: -5px; max-width: 102%; }
 
 section.training { background: #E8ABAA; margin-top: -0.3em; }
 
@@ -727,17 +725,15 @@ section.training .flex-7 { position: relative; margin-top: 80px; }
 
 @media (min-width: 1440px) { section.training .flex-7 { margin-top: 0; } }
 
-.birds-4 { z-index: 1; position: relative; width: 80%; }
-
-@media (min-width: 768px) { .birds-4 { width: 100%; } }
-
-@media (min-width: 1024px) { .birds-4 { width: 80%; } }
+.birds-4 { z-index: 1; position: relative; width: 80%; margin: auto; }
 
 @media (min-width: 1440px) { .birds-4 { position: absolute; width: 600px; right: -20px; top: 50%; transform: translateY(10%); } }
 
-.abstract-6 { position: relative; top: -90px; left: -30px; width: 60%; }
+.abstract-6 { position: relative; top: -50px; left: -30px; width: 60%; }
 
-@media (min-width: 768px) { .abstract-6 { position: absolute; top: 220px; bottom: 40px; } }
+@media (min-width: 768px) { .abstract-6 { position: absolute; top: 160px; } }
+
+@media (min-width: 1024px) { .abstract-6 { top: 280px; } }
 
 @media (min-width: 1440px) { .abstract-6 { top: 260px; } }
 

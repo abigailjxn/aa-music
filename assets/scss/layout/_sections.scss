@@ -333,11 +333,13 @@ section.hero-about {
   position: relative;
   overflow-x: hidden;
   bottom: 0;
+  left: -5px;
+  max-width: 102%;
 
-  @media (min-width: $desktop-lg) {
-    width: 100%;
-    left: 0;
-  }
+  // @media (min-width: $desktop-lg) {
+  //   width: 100%;
+  //   left: 0;
+  // }
 }
 
 section.training {
@@ -388,14 +390,7 @@ section.training {
   z-index: 1;
   position: relative;
   width: 80%;
-
-  @media (min-width: $tablet) {
-    width: 100%;
-  }
-
-  @media (min-width: $desktop-sm) {
-    width: 80%;
-  }
+  margin: auto;
 
   @media (min-width: $desktop-lg) {
     position: absolute;
@@ -408,14 +403,17 @@ section.training {
 
 .abstract-6 {
   position: relative;
-  top: -90px;
+  top: -50px;
   left: -30px;
   width: 60%;
 
   @media (min-width: $tablet) {
     position: absolute;
-    top: 220px;
-    bottom: 40px;
+    top: 160px;
+  }
+
+  @media (min-width: $desktop-sm) {
+    top: 280px;
   }
 
   @media (min-width: $desktop-lg) {
@@ -462,14 +460,13 @@ section.experience {
     }
   }
 
-  .push-1{
+  .push-1 {
     @media (min-width: $tablet) {
       left: 0;
     }
     @media (min-width: $desktop-sm) {
       left: 8.33333333333%;
     }
-
   }
 }
 
@@ -797,7 +794,6 @@ section.about-cta {
       width: 80%;
     }
   }
-
 }
 
 // 404 Page
