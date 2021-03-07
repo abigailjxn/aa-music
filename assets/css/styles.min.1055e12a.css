@@ -495,13 +495,15 @@ footer .socials { width: 100%; }
 
 @media (min-width: 768px) { footer .socials { width: 40%; } }
 
-@media (min-width: 1440px) { footer .socials { width: 15%; } }
+@media (min-width: 1440px) { footer .socials { width: 30%; } }
 
-footer .socials ul { width: 100%; display: flex; justify-content: space-evenly; align-items: center; padding: 0; margin-top: 40px; }
+footer .socials ul { width: 100%; display: flex; justify-content: center; align-items: center; padding: 0; margin-top: 40px; }
 
-@media (min-width: 768px) { footer .socials ul { width: initial; justify-content: space-between; margin: auto; } }
+@media (min-width: 768px) { footer .socials ul { width: initial; justify-content: flex-end; margin: auto; } }
 
-footer .socials ul li { width: 28px; }
+footer .socials ul li { width: 28px; margin-right: 30px; }
+
+footer .socials ul li:last-of-type { margin-right: 0; }
 
 body { background-color: #FBF5E8; }
 

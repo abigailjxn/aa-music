@@ -72,25 +72,30 @@ footer {
       width: 40%;
     }
     @media (min-width: $desktop-lg) {
-      width: 15%;
+      width: 30%;
     }
 
     ul {
       width: 100%;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center;
       padding: 0;
       margin-top: 40px;
 
       @media (min-width: $tablet) {
         width: initial;
-        justify-content: space-between;
+        justify-content: flex-end;
         margin: auto;
       }
 
       li {
         width: 28px;
+        margin-right: 30px;
+
+        &:last-of-type{
+          margin-right: 0;
+        }
       }
     }
   }
