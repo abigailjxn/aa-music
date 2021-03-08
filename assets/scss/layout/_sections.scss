@@ -691,10 +691,11 @@ section.inspiration {
   }
 
   @media (min-width: $desktop-sm) {
-    width: 70%;
+    width: 90%;
     top: 88%;
   }
   @media (min-width: $desktop-lg) {
+    width: 70%;
     right: 0px;
     top: inherit;
     left: initial;

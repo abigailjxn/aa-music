@@ -837,9 +837,9 @@ section.inspiration .image-container { position: relative; width: 100%; }
 
 @media (min-width: 768px) { .abstract-9 { top: 100%; left: 10%; width: 100%; } }
 
-@media (min-width: 1024px) { .abstract-9 { width: 70%; top: 88%; } }
+@media (min-width: 1024px) { .abstract-9 { width: 90%; top: 88%; } }
 
-@media (min-width: 1440px) { .abstract-9 { right: 0px; top: inherit; left: initial; bottom: -120px; } }
+@media (min-width: 1440px) { .abstract-9 { width: 70%; right: 0px; top: inherit; left: initial; bottom: -120px; } }
 
 .branch-4 { width: 50%; bottom: -50px; position: relative; z-index: 10; }
 

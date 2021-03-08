@@ -15,6 +15,11 @@ $logo = get_field('logo');
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="theme-color" content="#ffffff">
 
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url') ?>/assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_url') ?>/assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_url') ?>/assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="<?php bloginfo('template_url') ?>/assets/favicon/site.webmanifest">
+
 	<!-- Add Font Awesome or Webfont links here  -->
 
 	<?php wp_head(); ?>
