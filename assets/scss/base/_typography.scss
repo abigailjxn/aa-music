@@ -1,7 +1,7 @@
 // TYPOGRAPHY
 
 ////////// Import fonts locally here //////////
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Tenor+Sans&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Tenor+Sans&display=swap");
 // Save font files in assets/fonts
 
 // Declare Vars
@@ -10,10 +10,6 @@ $sansHeader: "Tenor Sans", sans-serif;
 $sansSerif: "Open Sans", sans-serif;
 
 .text {
-  // &-tiny {
-  //   font-size: 10px;
-  //   line-height: 1;
-  // }
   &-small {
     font-size: 14px;
     line-height: 1.25;
@@ -34,13 +30,8 @@ $sansSerif: "Open Sans", sans-serif;
     font-size: 45px;
     line-height: 1.2;
   }
-  // &-xxLarge {
-  //   font-size: 55px;
-  //   line-height: 1;
-  // }
 
   @media (min-width: 768px) {
-    // &-normal { font-size: 18px; line-height: 2.1;  }
     &-medium {
       font-size: 24px;
       line-height: 1.2;
@@ -53,10 +44,6 @@ $sansSerif: "Open Sans", sans-serif;
       font-size: 48px;
       line-height: 1.16;
     }
-    // &-xxLarge {
-    //   font-size: 66px;
-    //   line-height: 1;
-    // }
   }
 
   @media (min-width: 1440px) {
@@ -64,10 +51,6 @@ $sansSerif: "Open Sans", sans-serif;
       font-size: 16px;
       line-height: 1.4;
     }
-    // &-normal {
-    //   font-size: 18px;
-    //   line-height: 1.5;
-    // }
     &-medium {
       font-size: 28px;
       line-height: 1.4;
@@ -80,10 +63,6 @@ $sansSerif: "Open Sans", sans-serif;
       font-size: 52px;
       line-height: 1.2;
     }
-    // &-xxLarge {
-    //   font-size: 86px;
-    //   line-height: 1;
-    // }
   }
 }
 
@@ -99,10 +78,6 @@ body {
 
 .sansHeader {
   // Size
-  // &-ti {
-  //   font-family: $sansHeader;
-  //   @extend .text-tiny;
-  // }
   &-sm {
     font-family: $sansHeader;
     @extend .text-small;
@@ -123,18 +98,10 @@ body {
     font-family: $sansHeader;
     @extend .text-xLarge;
   }
-  // &-xxl {
-  //   font-family: $sansHeader;
-  //   @extend .text-xxLarge;
-  // }
 }
 
 .sansSerif {
   // Size
-  // &-ti {
-  //   font-family: $sansSerif;
-  //   @extend .text-tiny;
-  // }
   &-sm {
     font-family: $sansSerif;
     @extend .text-small;
@@ -155,10 +122,6 @@ body {
     font-family: $sansSerif;
     @extend .text-xLarge;
   }
-  // &-xxl {
-  //   font-family: $sansSerif;
-  //   @extend .text-xxLarge;
-  // }
 }
 
 // Weight
@@ -187,6 +150,6 @@ em {
   text-transform: uppercase;
 }
 
-.spaced{
+.spaced {
   letter-spacing: 2px;
 }

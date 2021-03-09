@@ -288,6 +288,7 @@ section.music-cta {
     bottom: 0;
     clip-path: url("#abstract-5");
     background: $brand2;
+    z-index: -1;
 
     @media (min-width: $desktop-sm) {
       width: 1000px;

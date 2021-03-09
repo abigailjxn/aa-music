@@ -7,7 +7,7 @@ header {
   top: 0px;
   z-index: 1000;
   padding: 40px 0px;
-  
+
   @media (min-width: 768px) {
     padding: 70px 0px 40px;
   }
@@ -23,7 +23,7 @@ header {
   }
 
   .logo {
-    @media(max-width: 767px){
+    @media (max-width: 767px) {
       flex: 0 1 50%;
     }
     img {
@@ -112,22 +112,22 @@ header {
       }
     }
 
-    &.flex-7{
-      @media(max-width: 1023px){
-        display:none;
+    &.flex-7 {
+      @media (max-width: 1023px) {
+        display: none;
       }
     }
   }
 
   .button-wrapper {
-    display:block;
+    display: block;
     position: absolute;
     width: 100%;
     top: 0px;
     right: 0px;
-    
+
     @media (min-width: $desktop-sm) {
-      display:none;
+      display: none;
     }
 
     .hamburger {
@@ -206,7 +206,7 @@ header {
     overflow: hidden;
     transition: 1s ease all;
 
-    @media(min-width: $desktop-sm){
+    @media (min-width: $desktop-sm) {
       display: none;
     }
 
@@ -262,9 +262,9 @@ header {
         flex-direction: column;
         align-items: flex-end;
         padding: 50px 20px 0;
-        
+
         text-align: right;
-        
+
         @media (min-width: 375px) {
           margin-top: 60px;
           padding: 0 20px;

@@ -21,6 +21,8 @@ $logo = get_field('logo');
 	<link rel="manifest" href="<?php bloginfo('template_url') ?>/assets/favicon/site.webmanifest">
 
 	<!-- Add Font Awesome or Webfont links here  -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Tenor+Sans&display=swap" rel="stylesheet"> 
 
 	<?php wp_head(); ?>
 
