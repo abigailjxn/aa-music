@@ -25,6 +25,7 @@ section.music-hero {
     display: none;
     @media (min-width: $tablet) {
       display: block;
+      width: 75%;
       position: absolute;
       left: 0;
       top: 0;
@@ -537,6 +538,7 @@ section.collab {
 
     @media (min-width: $desktop-lg) {
       width: 300px;
+      margin-top: 0;
       margin-right: 150px;
       margin-bottom: 185px;
     }
