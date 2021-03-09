@@ -1,95 +1,101 @@
 //FOOTER
 
 footer {
-  color: white;
+  height: 100%;
+  color: $black;
+  background-color: $grey;
 
-  a {
-    color: white;
-    text-decoration: none;
-  }
-
-  .menu {
-    ul {
-      li {
-        a {
-          line-height: 41px;
-
-          @media (min-width: 768px) {
-            line-height: initial;
-          }
-        }
-
-        &.current-menu-item {
-          a {
-            font-weight: bold;
-          }
-        }
-      }
-    }
-  }
-}
-
-.main-footer {
-  display: flex;
-  background-color: $brand1;
-
-  @media (min-width: 768px) {
-    height: 355px;
+  @media (min-width: $tablet) {
+    height: 100px;
   }
 
   .container {
     height: 100%;
-    padding: 50px 40px;
 
-    @media (min-width: 768px) {
-      padding: 0 20px;
+    @media (max-width: 767px) {
+      padding: 40px 20px 20px;
+      text-align: center;
     }
   }
 
   .row {
-    justify-content: flex-start;
-    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    @media (min-width: 768px) {
-      margin: 75px 0;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .copyright {
+    width: 100%;
+    @media (min-width: $tablet) {
+      width: initial;
+    }
+  }
+
+  .footer-decor {
+    display: none;
+    .home & {
+      display: block;
+      position: absolute;
+      width: 50px;
+      right: 5%;
+      top: -30px;
+      
+      @media(min-width: $tablet){
+        left: 2%;
+        right: initial;
+      }
+
+      @media(min-width: $desktop-sm){
+        width: 100px;
+        top: -70px;
+        left: 30%;
+      }
+      @media(min-width: $desktop-lg){
+        width: 150px;
+        top: -90px;
+        left: 25%;
+
+      }
+    }
+  }
+
+  .socials {
+    width: 100%;
+
+    
+    @media (min-width: $tablet) {
+      width: 40%;
+    }
+    @media (min-width: $desktop-lg) {
+      width: 30%;
+    }
+
+    ul {
+      width: 100%;
+      display: flex;
       justify-content: center;
-      flex-direction: row;
-    }
+      align-items: center;
+      padding: 0;
+      margin-top: 40px;
 
-    .logo {
-      position: relative;
-      width: 150px;
-      padding-bottom: 95px;
-
-      @media (min-width: 768px) {
-        width: 195px;
-        padding-bottom: 0;
+      @media (min-width: $tablet) {
+        width: initial;
+        justify-content: flex-end;
+        margin: auto;
       }
 
-      @media (min-width: 1024px) {
-        margin-right: 65px;
-      }
+      li {
+        width: 28px;
+        margin-right: 30px;
 
-      &:after {
-        content: " ";
-        border-bottom: solid white 2px;
-        width: 50px;
-        position: absolute;
-
-        top: 50px;
-      }
-    }
-
-    .menu {
-      @media (min-width: 768px) {
-        width: 185px;
-        margin: 0 60px;
-      }
-
-      a {
-        font-size: 12px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
+        &:last-of-type{
+          margin-right: 0;
+        }
       }
     }
   }

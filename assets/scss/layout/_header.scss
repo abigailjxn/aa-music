@@ -3,32 +3,131 @@
 header {
   position: absolute;
   width: 100%;
+  background: none;
   top: 0px;
-  background: $white;
   z-index: 1000;
-  padding: 60px 0px;
-
+  padding: 40px 0px;
+  
   @media (min-width: 768px) {
-    background: none;
-    padding: 80px 0px 40px;
+    padding: 70px 0px 40px;
   }
 
   .row {
     position: relative;
+
+    @media (min-width: $desktop-sm) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
   .logo {
+    @media(max-width: 767px){
+      flex: 0 1 50%;
+    }
     img {
-      width: 128px;
+      width: 80px;
+    }
+  }
+
+  nav {
+    @media (min-width: $desktop-sm) {
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+
+        li {
+          display: flex;
+          align-items: center;
+          position: relative;
+
+          &.current-menu-item {
+            border-bottom: 1px solid black;
+            padding: 0 5px;
+
+            &:hover:after {
+              display: none;
+            }
+          }
+
+          &:hover:after {
+            height: 1px;
+            width: 100%;
+            background: black;
+          }
+
+          &:after {
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0%;
+            transition: 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55) all;
+            content: "";
+          }
+
+          a {
+            text-decoration: none;
+            text-transform: uppercase;
+          }
+        }
+
+        li:last-of-type {
+          border: 1px solid black;
+          border-radius: 25px;
+          padding: 10px 25px;
+          margin-left: 70px;
+
+          &::before {
+            content: " ";
+            position: absolute;
+            background: black;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            height: 100%;
+            width: 0%;
+            border-radius: 30px;
+            transition: ease all 0.3s;
+            z-index: -1;
+          }
+
+          &:after {
+            display: none;
+          }
+        }
+
+        li:last-of-type:hover {
+          border-color: transparent;
+
+          &:before {
+            width: 100%;
+            transition: ease all 0.3s;
+          }
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+
+    &.flex-7{
+      @media(max-width: 1023px){
+        display:none;
+      }
     }
   }
 
   .button-wrapper {
-    @media (max-width: 767px) {
-      position: absolute;
-      width: 100%;
-      top: 0px;
-      right: 0px;
+    display:block;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    
+    @media (min-width: $desktop-sm) {
+      display:none;
     }
 
     .hamburger {
@@ -107,6 +206,10 @@ header {
     overflow: hidden;
     transition: 1s ease all;
 
+    @media(min-width: $desktop-sm){
+      display: none;
+    }
+
     .navOpen & {
       transition: 1s ease all;
       visibility: visible;
@@ -158,22 +261,22 @@ header {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        margin-top: 60px;
         padding: 50px 20px 0;
-
+        
         text-align: right;
-
+        
         @media (min-width: 375px) {
+          margin-top: 60px;
           padding: 0 20px;
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: $tablet) {
           padding-right: 80px;
           padding-left: 40px;
           margin-top: 80px;
         }
 
-        @media (min-width: 1024px) {
+        @media (min-width: $desktop-sm) {
           padding-left: 110px;
         }
 
@@ -183,10 +286,11 @@ header {
         }
 
         .button-wrapper {
+          position: relative;
           margin-bottom: 60px;
           padding-right: 16px;
 
-          @media (min-width: 768px) {
+          @media (min-width: $tablet) {
             padding-right: 0;
           }
 
@@ -261,19 +365,21 @@ header {
                 padding-bottom: 12px;
 
                 text-decoration: none;
-                color: $darkGrey;
+                color: $black;
                 line-height: 1;
                 text-transform: uppercase;
+                font-size: 26px;
+                font-family: $sansHeader;
 
                 @media (min-width: 375px) {
-                  font-size: 20px;
                   padding-bottom: 18px;
                 }
-                @media (min-width: 768px) {
+                @media (min-width: $tablet) {
                   font-size: 32px;
                 }
 
-                @media (min-width: 1024px) {
+                @media (min-width: $desktop-sm) {
+                  font-family: $sansSerif;
                   font-size: 42px;
                 }
 

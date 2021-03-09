@@ -1,6 +1,6 @@
 const { watch, series, parallel, src, dest } = require("gulp");
 
-const sass = require("gulp-sass");
+const sass = require("@selfisekai/gulp-sass");
 const cssmin = require("gulp-cssmin");
 const rename = require("gulp-rename");
 const deletefiles = require("gulp-remove-files");
@@ -10,7 +10,7 @@ const concat = require("gulp-concat");
 const rev = require("gulp-rev-all");
 
 const settings = {
-  domain: "http://wordpressbase.local/",
+  domain: "http://amandaaugustmusic.local/",
   root: "../assets/",
   sassInput: "../assets/**/*.scss",
   sassOutput: "../assets/css/",
@@ -21,6 +21,12 @@ const settings = {
   // Include JS Libraries here to be compiled
   jsFiles: [
     "../assets/js/lib/modernizr.js",
+    "../assets/js/lib/anime.js",
+    // "../assets/js/lib/jquery.3.5.1.min.js",
+    "../assets/js/lib/ScrollMagic.min.js",
+    "../assets/js/lib/jquery.ScrollMagic.min.js",
+    "../assets/js/lib/animation.gsap.min.js",
+    "../assets/js/lib/debug.addIndicators.min.js",
     "../assets/js/site.js",
   ],
 };

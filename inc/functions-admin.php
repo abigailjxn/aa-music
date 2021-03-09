@@ -1,16 +1,16 @@
 <?php
 
 // ACF Options Pages
-if( function_exists('acf_add_options_page') ) {
+// if( function_exists('acf_add_options_page') ) {
 
-	acf_add_options_page(array(
-		'page_title' 	=> 'Site Settings',
-		'menu_title'	=> 'Site Settings',
-		'menu_slug' 	=> 'theme-general-settings',
-		'capability'	=> 'edit_posts',
-		'redirect'		=> false
-	));
-}
+// 	acf_add_options_page(array(
+// 		'page_title' 	=> 'Site Settings',
+// 		'menu_title'	=> 'Site Settings',
+// 		'menu_slug' 	=> 'theme-general-settings',
+// 		'capability'	=> 'edit_posts',
+// 		'redirect'		=> false
+// 	));
+// }
 
 // My custom admin body classes
 add_filter('admin_body_class', 'my_custom_admin_body_classes');

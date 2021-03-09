@@ -1,6 +1,7 @@
 <?php
 
-// $navMain = wp_get_nav_menu_items("Main");
+$navMain = wp_get_nav_menu_items("Header");
+$logo = get_field('logo');
 
 ?>
 <!DOCTYPE html>
@@ -13,6 +14,11 @@
 	<meta name="viewport" content="user-scalable=yes, width=device-width, height=device-height" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="theme-color" content="#ffffff">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url') ?>/assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_url') ?>/assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_url') ?>/assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="<?php bloginfo('template_url') ?>/assets/favicon/site.webmanifest">
 
 	<!-- Add Font Awesome or Webfont links here  -->
 
@@ -32,8 +38,10 @@
 		<header class="top" id="header">
 			<div class="container">
 				<div class="row">
-					<div class="logo">
-						<a href="<?php bloginfo('url'); ?>">Logo</a>
+					<div class="flex-2 logo">
+						<a href="<?php bloginfo('url'); ?>">
+							<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>">
+						</a>
 					</div>
 					<div class="flex-10 button-wrapper text-right">
 						<button class="hamburger" id="hamburger" aria-label="Menu Button" tabindex="0">
@@ -44,6 +52,16 @@
 							</div>
 						</button>
 					</div>
+
+					<nav class="flex-7 text-right">
+						<ul>
+							<?php foreach ($navMain as $m) { ?>
+								<li class="<?php echo implode(' ', $m->classes); ?>">
+									<a href="<?php echo $m->url; ?>" target="<?php echo $m->target; ?>" ><?php echo $m->title; ?></a>
+								</li>
+							<?php } ?>
+						</ul>
+					</nav>
 				</div>
 			</div>
 
@@ -61,11 +79,11 @@
 						</div>
 						<nav>
 							<ul>
-								<!-- <?php foreach ($navMain as $m) { ?>
+								<?php foreach ($navMain as $m) { ?>
 									<li class="<?php echo implode(' ', $m->classes); ?>">
 										<a href="<?php echo $m->url; ?>" target="<?php echo $m->target; ?>" ><?php echo $m->title; ?></a>
 									</li>
-								<?php } ?> -->
+								<?php } ?>
 							</ul>
 						</nav>
 					</div>
