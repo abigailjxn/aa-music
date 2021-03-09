@@ -36,7 +36,7 @@
         <div class="row">
             <div class="flex-4">
                 <article class="feature-1 animate">
-                    <img src="<?php echo $featured_work['featured_1_image']['url']?>" alt="<?php echo $featured_work['featured_1_image']['alt']?>">
+                    <a href="<?php echo $featured_work['featured_1_url']?>"><img src="<?php echo $featured_work['featured_1_image']['url']?>" alt="<?php echo $featured_work['featured_1_image']['alt']?>"></a>
                     <div class="content">
                         <h3 class="project-title sansHeader-med normal"><?php echo $featured_work['featured_1_title']?></h3>
                         <h4 class="project-type light uppercase spaced"><?php echo $featured_work['featured_1_project_type']?></h4>
@@ -46,7 +46,7 @@
             </div>
             <div class="flex-4">
                 <article class="feature-2 animate">
-                    <img src="<?php echo $featured_work['featured_2_image']['url']?>" alt="<?php echo $featured_work['featured_2_image']['alt']?>">
+                <a href="<?php echo $featured_work['featured_2_url']?>"><img src="<?php echo $featured_work['featured_2_image']['url']?>" alt="<?php echo $featured_work['featured_2_image']['alt']?>"></a>
                     <div class="content">
                         <h3 class="project-title sansHeader-med normal"><?php echo $featured_work['featured_2_title']?></h3>
                         <h4 class="project-type light uppercase spaced"><?php echo $featured_work['featured_2_project_type']?></h4>
@@ -56,7 +56,7 @@
             </div>
             <div class="flex-4">
                 <article class="feature-3 animate">
-                    <img src="<?php echo $featured_work['featured_3_image']['url']?>" alt="<?php echo $featured_work['featured_3_image']['alt']?>">
+                <a href="<?php echo $featured_work['featured_3_url']?>"><img src="<?php echo $featured_work['featured_3_image']['url']?>" alt="<?php echo $featured_work['featured_3_image']['alt']?>"></a>
                     <div class="content">
                         <h3 class="project-title sansHeader-med normal"><?php echo $featured_work['featured_3_title']?></h3>
                         <h4 class="project-type light uppercase spaced"><?php echo $featured_work['featured_3_project_type']?></h4>

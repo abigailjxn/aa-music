@@ -29,13 +29,13 @@ $contact = get_field('contact');
             </div>
         </div>
     </div>
-    <img class="abstract-4-branch" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-4-branch.png" alt=" ">
-    <img class="style-svg abstract-4" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-4.svg" alt=" ">
+
+    <img class="abstract-4" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-4.png" alt=" ">
 </section>
 
 <section class="music-grid">
     <div class="container">
-        <div class="accordion">
+        <div class="accordion animate">
     
             <?php if ($vimeo['title'] && $vimeo_shortcode) : ?>
             <button id="accordion-open-1" class="accordion__button expanded" aria-expanded="true">
@@ -117,8 +117,7 @@ $contact = get_field('contact');
             </div>
         </div>
     </div>
-    <img class="abstract-5-branch" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-5-branch.png" alt=" ">
-    <img class="style-svg abstract-5" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-5.svg" alt=" ">
+    <img class="abstract-5" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-5.png" alt=" ">
 </section>
            
           

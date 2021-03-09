@@ -21,29 +21,21 @@ section {
 // Music
 
 section.music-hero {
-  .abstract-4-branch {
+  .abstract-4 {
     display: none;
     @media (min-width: $tablet) {
       display: block;
+      width: 75%;
       position: absolute;
       left: 0;
       top: 0;
-      clip-path: url("#abstract-4");
-      background: $brand3;
       z-index: -1;
     }
 
     @media (min-width: $desktop-sm) {
-      left: -20%;
+      width: 50%;
       overflow-x: hidden;
     }
-    @media (min-width: $desktop-lg) {
-      left: 0%;
-    }
-  }
-  .abstract-4 {
-    width: 0;
-    position: absolute;
   }
 }
 
@@ -282,25 +274,17 @@ section.music-cta {
     margin-top: 0;
   }
 
-  .abstract-5-branch {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    clip-path: url("#abstract-5");
-    background: $brand2;
+  .abstract-5 {
+    display: none;
 
     @media (min-width: $desktop-sm) {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
       width: 1000px;
+      z-index: -1;
     }
-
-    @media (max-width: 767px) {
-      display: none;
-    }
-  }
-
-  .abstract-5 {
-    width: 0;
-    position: absolute;
   }
 }
 
@@ -335,11 +319,6 @@ section.hero-about {
   bottom: 0;
   left: -5px;
   max-width: 102%;
-
-  // @media (min-width: $desktop-lg) {
-  //   width: 100%;
-  //   left: 0;
-  // }
 }
 
 section.training {
@@ -559,6 +538,7 @@ section.collab {
 
     @media (min-width: $desktop-lg) {
       width: 300px;
+      margin-top: 0;
       margin-right: 150px;
       margin-bottom: 185px;
     }
