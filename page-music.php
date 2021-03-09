@@ -29,8 +29,8 @@ $contact = get_field('contact');
             </div>
         </div>
     </div>
-    <img class="abstract-4" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-4.png" alt=" ">
 
+    <img class="abstract-4" src="<?php echo get_template_directory_uri(); ?>/assets/img/abstract-4.png" alt=" ">
 </section>
 
 <section class="music-grid">
