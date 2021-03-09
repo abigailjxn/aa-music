@@ -53,17 +53,14 @@ $(document).ready(function () {
 
 // Reveal on scroll
 const controller = new ScrollMagic.Controller();
-// build scenes
 const animateEl = document.getElementsByClassName("animate");
 for (let i = 0; i < animateEl.length; i++) {
-  // create a scene for each element
   new ScrollMagic.Scene({
-    triggerElement: animateEl[i], // y value not modified, so we can use element as trigger as well
-    // offset: 50,												 // start a little later
+    triggerElement: animateEl[i],
     triggerHook: 0.9,
     reverse: false, // only do once
   })
     .setClassToggle(animateEl[i], "triggered") // add class toggle
-    .addIndicators({ name: "animate " + (i + 1) }) // add indicators (requires plugin)
+    // .addIndicators({ name: "animate " + (i + 1) })
     .addTo(controller);
 }
