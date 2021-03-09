@@ -48,7 +48,6 @@ $(document).ready(function () {
 });
 
 // A11y Add click event to turn off animation
-
 // add CSS check for 'prefers-reduced-motion' ??
 
 // Reveal on scroll
