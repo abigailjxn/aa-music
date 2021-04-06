@@ -26,8 +26,8 @@ function print_scripts() {
 		$split = explode("/", $files[0]);
 		$filename = end($split);
 		$sources = array(
-			get_stylesheet_directory_uri() .'/assets/js/' . $filename,
 			'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js',
+			get_stylesheet_directory_uri() .'/assets/js/' . $filename,
 		);
 
 	endif;
